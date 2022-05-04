@@ -1,409 +1,260 @@
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Prius','24625','Electric Hatchback','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Avalon','36375','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Camry','25395','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Corolla','20425','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Supra','43540','Sport Coupe','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RAV4','26525','Compact SUV','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Highlander','35855','SUV','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Land Cruiser','85665','SUV','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Venza','33240','SUV','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Yaris','17750','Hatchback','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Sienna','34710','Van','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CH-R','24130','Compact SUV','4');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('4Runner','38105','SUV','4');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('86','27700','Sport Coupe','4');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Tundra','35950','Pickup','4');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Tacoma','27150','Pickup','4');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('IS','39125','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('ES','40800','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('LS','76100','Sedan','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('GS','51245','Sedan','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('LC','93050','Sport Coupe','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RC','42820','Sport Coupe','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('GX','56125','SUV','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('LX','86900','SUV','n/a');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('NX','37950','Compact SUV','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RX','45920','SUV','4');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('LFA','375000','Sport Coupe','n/a');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Accord','26120','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CR-V','26400','Compact SUV','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Civic','22350','Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Clarity','59250','Electric Sedan','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Fit','16190','Hatchback','5');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('HR-V','21870','Compact SUV','');///////////////////////////////
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Odyssey','33040','Van','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Pilot','37580','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Ridgeline','37640','Pickup','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('ILX','27300','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('MDX','48000','Suv','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('NSX','169500','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RDX','40100','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RLX','54900','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('TLX','38500','Sedan','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Ascent','32295','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('BRZ','27995','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Crosstrek','22645','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Forester','25395','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Impreza','18795','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Legacy','22995','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Outback','27,145','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('WRX','30100','Sedan','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CX-3','22190','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CX-5','25900','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CX-9','35280','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('MX-30','33740','Electric Coupact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Miata','27300','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Mazda6','23800','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Mazda3','20800','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RX-8','26645','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RX-7','37800','Sport Coupe','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('EV6','40900','Electric Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Forte','19090','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Forte5','22200','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('K5','23790','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Niro','29590','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Optima','26890','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Rio','16250','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Seltos','22590','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Sorento','29590','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Soul','19290','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Stinger','36290','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Telluride','33090','SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('NEXO','59435','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Tucson','24950','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Veloster N','32500','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Senta','27200','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Accent','16645','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('IONIQ','39950','Electric Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Venue','19000','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Sonata','35700','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Elantra','20200','Sedan','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('2 Series','35700','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('3 Series','41450','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('4 Series','45200','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('5 Series','54200','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('i3','44450','Electric Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('i8','147500','Electric Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('M3','70100','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('M4','72000','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('M5','103700','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('M6','11,900','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('M8','130000','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('X1','35400','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('X3','43700','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('X4','51800','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('X5','60600','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('X7','74900.','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Z4','49700','Sport Coupe','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('A-Class','33950','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('B-Class','38600','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('C-Class','43550','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('E-Class','54950','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('G-Class','133250','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('R-Class','52690','Van','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('S-Class','111100','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Metris','34900','Van','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('A','39900','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Q','43300','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('RS','118500','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('S','51900','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('TT','50500','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('e-tron','65900','Electric SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('R8','148700','Sport Coupe','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Boxster','100100','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cayenne','69000','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cayman','60500','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Macan','54900','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Panamera','88400','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('911','101200','Sport Coupe','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Clubman','29900','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Countryman','29100','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cooper','22900','Hatchback','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('4C','133000','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Giulia','43350','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Stelvio','45550','Compact SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('E-PACE','41800','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('F-PACE','50900','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('F-TYPE','69900','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('XF','45300','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('XJ','86500','Electric Sport Coupe','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Bronco','30800','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('E','43895','Electric Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Maverick','19995','Pickup','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('F150','30495','Pickup','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Mustang','27205','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Expedition','69695','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Explorer','33745','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Edge','37145','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Ranger','25715','Pickup','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Transit','26175','Van','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('GT','542676','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Escape','26760','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Focus','32705','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Fiesta','14260','Hatchback','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Avalanche','32400','Pickup','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Bolt EV','31500','Electric Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Camaro','25000','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Captiva','21440','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cobalt SS','21310','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Colorado','25435','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Corvette','60900','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cruze','18870','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Equinox','25800','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Impala','27000','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Sonic','16295','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Spark EV','26000','Electric Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Suburban','53200','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Tahoe','50500','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('TrailBlazer','21800','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Trax','21400','Compact SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Avenger','26000','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Caliber','12430','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Challenger','30075','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Charger','32500','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Dart','16100.','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Durango','36995','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Journey','29917','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Ram1500','35900','Pcikup','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('C30','11300','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('C70','22400','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('V40','58750','Electric SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('S60','39250','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('S90','52850','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('V60','46200','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('V90','56200','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('XC60','42650','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('XC90','50900','SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cherokee','29995','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Compass','26390','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Gladiator','36085','Pickup','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Renegade','24195','Compact SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Wrangler','29995','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Patriot','22000','Compact SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('ATS','38995','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('CT','37000','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('DTS','48000','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('ELR','75995','Sport Coupe','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Escalade','76295','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('SRX','43995','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('XT','35795','SUV','');
-
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Model S','99990','Sedan','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Model 3','46990','Hatchback','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Model X','114990','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Model Y','62990','SUV','');
-INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRatingNHTSA) 
-VALUES ('Cybertruck','39900','Pickup','');
+ 
+VALUES ('Prius','LE','','');
+VALUES ('Prius','XLE','','');
+VALUES ('Avalon','XLE','','');
+VALUES ('Avalon','TRD','','');
+VALUES ('Avalon','Limited','','');
+VALUES ('Camry','LE','','');
+VALUES ('Camry','XLE','','');
+VALUES ('Camry','TRD','','');
+VALUES ('Corolla','LE','','');
+VALUES ('Corolla','XLE','','');
+VALUES ('Supra','Base','','');
+VALUES ('Supra','Premium','','');
+VALUES ('RAV4','LE','','');
+VALUES ('RAV4','XLE','','');
+VALUES ('RAV4','Limited','','');
+VALUES ('Highlander','LE','','','');
+VALUES ('Highlander','XLE','','','');
+VALUES ('Highlander','Limited','','');
+VALUES ('Land Cruiser','Base','','');
+VALUES ('Land Cruiser','Heritage','','');
+VALUES ('Venza','LE','','');
+VALUES ('Venza','XLE','','');
+VALUES ('Venza','Limited','','');
+VALUES ('Yaris','LE','','');
+VALUES ('Yaris','XLE','','');
+VALUES ('Sienna','LE','','');
+VALUES ('Sienna','XLE','','');
+VALUES ('Sienna','Limited','','');
+VALUES ('CH-R','LE','','');
+VALUES ('CH-R','XLE','','');
+VALUES ('CH-R','Limited','','');
+VALUES ('4Runner','Base','','');
+VALUES ('4Runner','TRD','','');
+VALUES ('86','Base','','');
+VALUES ('86','TRD','','');
+VALUES ('Tundra','SR','',''); 
+VALUES ('Tacoma','SR','','');
+VALUES ('Tacoma','Off-road','','');
+ 
+VALUES ('IS','Base','','');
+VALUES ('IS','Fsport','','');
+VALUES ('ES','Base','','');
+VALUES ('ES','Fsport','','');
+VALUES ('LS','Base','','');
+VALUES ('LS','Fsport','','');
+VALUES ('GS','Base','','');
+VALUES ('GS','Fsport','','');
+VALUES ('LC','500h','','');
+VALUES ('RC','Fsport','','');
+VALUES ('GX','Base','','');
+VALUES ('GX','Premium','','');
+VALUES ('LX','Base','','');
+VALUES ('LX','Premium','','');
+VALUES ('LX','Fsport','','');
+VALUES ('NX','Base','','');
+VALUES ('NX','Fsport','','');
+VALUES ('RX','Base','','');
+VALUES ('RX','Fsport','','');
+VALUES ('LFA','Base','','');
+ 
+VALUES ('Accord','LX','','');
+VALUES ('Accord','EX-L','','');
+VALUES ('CR-V','LX','','');
+VALUES ('CR-V','EX-L','','');
+VALUES ('Civic','LX','','');
+VALUES ('Civic','EX','','');
+VALUES ('Clarity','Base','','');
+VALUES ('Fit','LX','','');
+VALUES ('Fit','EX-L','','');
+VALUES ('HR-V','LX','','');
+VALUES ('HR-V','EX_L','','');
+VALUES ('Odyssey','LX','','');
+VALUES ('Odyssey','EX-L','',''); 
+VALUES ('Pilot','LX','','');
+VALUES ('Pilot','EX-L','','');
+VALUES ('Ridgeline','RTL','','');
+ 
+VALUES ('ILX','Base','','');
+VALUES ('ILX','Advance','','');
+VALUES ('MDX','Base','','');
+VALUES ('MDX','Advance','','');
+VALUES ('NSX','Base','','');
+VALUES ('NSX','Advance','','');
+VALUES ('RDX','Base','','');
+VALUES ('RDX','Advance','','');
+VALUES ('RLX','Base','','');
+VALUES ('RLX','Advance','','');
+VALUES ('TLX','Base','','');
+VALUES ('TLX','Advance','','');
+ 
+VALUES ('Ascent','Base','','');
+VALUES ('BRZ','Base','','');
+VALUES ('Crosstrek','Base','','');
+VALUES ('Forester','Base','','');
+VALUES ('Impreza','Base','','');
+VALUES ('Legacy','Base','','');
+VALUES ('Outback','Base','','');
+VALUES ('WRX','Base','','');
+ 
+VALUES ('CX-3','Base','','');
+VALUES ('CX-5','Base','','');
+VALUES ('CX-9','Base','','');
+VALUES ('MX-30','Base','','');
+VALUES ('Miata','Base','','');
+VALUES ('Mazda6','Base','','');
+VALUES ('Mazda3','Base','','');
+VALUES ('RX-8','Base','','');
+VALUES ('RX-7','Base','','');
+ 
+VALUES ('EV6','Base','','');
+VALUES ('Forte','Base','','');
+VALUES ('Forte5','Base','','');
+VALUES ('K5','Base','','');
+VALUES ('Niro','Base','','');
+VALUES ('Optima','Base','','');
+VALUES ('Rio','Base','','');
+VALUES ('Seltos','Base','','');
+VALUES ('Sorento','Base','','');
+VALUES ('Soul','Base','','');
+VALUES ('Stinger','Base','','');
+VALUES ('Telluride','Base','','');
+ 
+VALUES ('NEXO','Base','','');
+VALUES ('Tucson','Base','','');
+VALUES ('Veloster N','Base','','');
+VALUES ('Senta','Base','','');
+VALUES ('Accent','Base','','');
+VALUES ('IONIQ','Base','','');
+VALUES ('Venue','Base','','');
+VALUES ('Sonata','Base','','');
+VALUES ('Elantra','Base','','');
+ 
+VALUES ('2 Series','Base','','');
+VALUES ('3 Series','Base','','');
+VALUES ('4 Series','Base','','');
+VALUES ('5 Series','Base','','');
+VALUES ('i3','Base','','');
+VALUES ('i8','Base','','');
+VALUES ('M3','Base','','');
+VALUES ('M4','Base','','');
+VALUES ('M5','Base','','');
+VALUES ('M6','Base','','');
+VALUES ('M8','Base','','');
+VALUES ('X1','Base','','');
+VALUES ('X3','Base','','');
+VALUES ('X4','Base','','');
+VALUES ('X5','Base','','');
+VALUES ('X7','Base','','');
+VALUES ('Z4','Base','','');
+ 
+VALUES ('A-Class','Base','','');
+VALUES ('B-Class','Base','','');
+VALUES ('C-Class','Base','','');
+VALUES ('E-Class','Base','','');
+VALUES ('G-Class','Base','','');
+VALUES ('R-Class','Base','','');
+VALUES ('S-Class','Base','','');
+VALUES ('Metris','Base','','');
+ 
+VALUES ('A','Base','','');
+VALUES ('Q','Base','','');
+VALUES ('RS','Base','','');
+VALUES ('S','Base','','');
+VALUES ('TT','Base','','');
+VALUES ('e-tron','Base','','');
+VALUES ('R8','Base','','');
+ 
+VALUES ('Boxster','Base','','');
+VALUES ('Cayenne','Base','','');
+VALUES ('Cayman','Base','','');
+VALUES ('Macan','Base','','');
+VALUES ('Panamera','Base','','');
+VALUES ('911','Base','','');
+ 
+VALUES ('Clubman','Base','','');
+VALUES ('Countryman','Base','','');
+VALUES ('Cooper','Base','','');
+ 
+VALUES ('4C','Base','','');
+VALUES ('Giulia','Base','','');
+VALUES ('Stelvio','Base','','');
+ 
+VALUES ('E-PACE','41800','','');
+VALUES ('F-PACE','50900','','');
+VALUES ('F-TYPE','69900','','');
+VALUES ('XF','45300','','');
+VALUES ('XJ','86500','','');
+ 
+VALUES ('Bronco','30800','','');
+VALUES ('E','43895','  ','');
+VALUES ('Maverick','19995','','');
+VALUES ('F150','30495','','');
+VALUES ('Mustang','27205','','');
+VALUES ('Expedition','69695','','');
+VALUES ('Explorer','33745','','');
+VALUES ('Edge','37145','','');
+VALUES ('Ranger','25715','','');
+VALUES ('Transit','26175','','');
+VALUES ('GT','542676','','');
+VALUES ('Escape','26760','','');
+VALUES ('Focus','32705','','');
+VALUES ('Fiesta','14260','','');
+ 
+VALUES ('Avalanche','32400','','');
+VALUES ('Bolt EV','31500','  ','');
+VALUES ('Camaro','25000','','');
+VALUES ('Captiva','21440','','');
+VALUES ('Cobalt SS','21310','','');
+VALUES ('Colorado','25435','','');
+VALUES ('Corvette','60900','','');
+VALUES ('Cruze','18870','','');
+VALUES ('Equinox','25800','','');
+VALUES ('Impala','27000','','');
+VALUES ('Sonic','16295','','');
+VALUES ('Spark EV','26000','','');
+VALUES ('Suburban','53200','','');
+VALUES ('Tahoe','50500','','');
+VALUES ('TrailBlazer','21800','','');
+VALUES ('Trax','21400','','');
+ 
+VALUES ('Avenger','26000','','');
+VALUES ('Caliber','12430','','');
+VALUES ('Challenger','30075','','');
+VALUES ('Charger','32500','','');
+VALUES ('Dart','16100.','','');
+VALUES ('Durango','36995','','');
+VALUES ('Journey','29917','','');
+VALUES ('Ram1500','35900','','');
+ 
+VALUES ('C30','11300','','');
+VALUES ('C70','22400','','');
+VALUES ('V40','58750','','');
+VALUES ('S60','39250','','');
+VALUES ('S90','52850','','');
+VALUES ('V60','46200','','');
+VALUES ('V90','56200','','');
+VALUES ('XC60','42650','','');
+VALUES ('XC90','50900','','');
+ 
+VALUES ('Cherokee','29995','','');
+VALUES ('Compass','26390','','');
+VALUES ('Gladiator','36085','','');
+VALUES ('Renegade','24195','','');
+VALUES ('Wrangler','29995','','');
+VALUES ('Patriot','22000','','');
+ 
+VALUES ('ATS','38995','','');
+VALUES ('CT','37000','','');
+VALUES ('DTS','48000','','');
+VALUES ('ELR','75995','','');
+VALUES ('Escalade','76295','','');
+VALUES ('SRX','43995','','');
+VALUES ('XT','35795','','');
+ 
+VALUES ('Model S','99990','','');
+VALUES ('Model 3','46990','','');
+VALUES ('Model X','11990','','');
+VALUES ('Model Y','62990','','');
+VALUES ('Cybertruck','39900','','');

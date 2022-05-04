@@ -5,17 +5,17 @@ CREATE TABLE IF NOT EXISTS COUNTRY(
     PRIMARY KEY (CountryName)
 );
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('Japan', 'Asia');
+VALUES ('Japan','Asia');
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('Korea', 'Asia');
+VALUES ('Korea','Asia');
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('Germany', 'Europe');
+VALUES ('Germany','Europe');
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('Italy', 'Europe');
+VALUES ('Italy','Europe');
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('England', 'Europe');
+VALUES ('England','Europe');
 INSERT INTO COUNTRY (CountryName, Region)
-VALUES ('America', 'North America');
+VALUES ('America','North America');
 
 DROP TABLE IF EXISTS BRAND;
 CREATE TABLE IF NOT EXISTS BRAND(
@@ -24,49 +24,49 @@ CREATE TABLE IF NOT EXISTS BRAND(
     PRIMARY KEY (BrandName)
 );
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Toyota', 'Japan');
+VALUES ('Toyota','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Honda', 'Japan');
+VALUES ('Honda','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Lexus', 'Japan');
+VALUES ('Lexus','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Acura', 'Japan');
+VALUES ('Acura','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Subaru', 'Japan');
+VALUES ('Subaru','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Mazda', 'Japan');
+VALUES ('Mazda','Japan');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('KIA', 'Korea');
+VALUES ('KIA','Korea');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Hyundai', 'Korea');
+VALUES ('Hyundai','Korea');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('BMW', 'Germany');
+VALUES ('BMW','Germany');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Mercedes-Benz', 'Germany');
+VALUES ('Mercedes-Benz','Germany');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Audi', 'Germany');
+VALUES ('Audi','Germany');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Porsche', 'Germany');
+VALUES ('Porsche','Germany');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('MINI', 'Endland');
+VALUES ('MINI','Endland');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Alfa Romeo', 'Endland');
+VALUES ('Alfa Romeo','Endland');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Jarguar', 'England');
+VALUES ('Jarguar','England');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Ford', 'America');
+VALUES ('Ford','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Dodge', 'America');
+VALUES ('Dodge','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Chevrolet', 'America');
+VALUES ('Chevrolet','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Volvo', 'America');
+VALUES ('Volvo','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Cadillac', 'America');
+VALUES ('Cadillac','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Jeep', 'America');
+VALUES ('Jeep','America');
 INSERT INTO BRAND (BrandName, CountryName)
-VALUES ('Tesla', 'America');
+VALUES ('Tesla','America');
 
 DROP TABLE IF EXISTS MAKES;
 CREATE TABLE IF NOT EXISTS MAKES(
@@ -163,7 +163,7 @@ INSERT INTO MAKES (ModelName, BrandName)
 VALUES ('TLX','Acura');
 
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Ascend','Subaru');
+VALUES ('Ascent','Subaru');
 INSERT INTO MAKES (ModelName, BrandName)
 VALUES ('BRZ','Subaru');
 INSERT INTO MAKES (ModelName, BrandName)
@@ -429,68 +429,519 @@ INSERT INTO MAKES (ModelName, BrandName)
 VALUES ('Ram1500','Dodge');
 
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('C30', 'Volvo');
+VALUES ('C30','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('C70', 'Volvo');
+VALUES ('C70','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('V40', 'Volvo');
+VALUES ('V40','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('S60', 'Volvo');
+VALUES ('S60','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('S90', 'Volvo');
+VALUES ('S90','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('V60', 'Volvo');
+VALUES ('V60','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('V90', 'Volvo');
+VALUES ('V90','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('XC60', 'Volvo');
+VALUES ('XC60','Volvo');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('XC90', 'Volvo');
+VALUES ('XC90','Volvo');
 
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Cherokee', 'Jeep');
+VALUES ('Cherokee','Jeep');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Compass', 'Jeep');
+VALUES ('Compass','Jeep');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Gladiator', 'Jeep');
+VALUES ('Gladiator','Jeep');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Renegade', 'Jeep');
+VALUES ('Renegade','Jeep');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Wrangler', 'Jeep');
+VALUES ('Wrangler','Jeep');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Patriot', 'Jeep');
+VALUES ('Patriot','Jeep');
 
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('ATS', 'Cadillac');
+VALUES ('ATS','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('CT', 'Cadillac');
+VALUES ('CT','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('DTS', 'Cadillac');
+VALUES ('DTS','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('ELR', 'Cadillac');
+VALUES ('ELR','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Escalade', 'Cadillac');
+VALUES ('Escalade','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('SRX', 'Cadillac');
+VALUES ('SRX','Cadillac');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('XT', 'Cadillac');
+VALUES ('XT','Cadillac');
 
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Model S', 'Tesla');
+VALUES ('Model S','Tesla');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Model 3', 'Tesla');
+VALUES ('Model 3','Tesla');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Model X', 'Tesla');
+VALUES ('Model X','Tesla');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Model Y', 'Tesla');
+VALUES ('Model Y','Tesla');
 INSERT INTO MAKES (ModelName, BrandName)
-VALUES ('Cybertruck', 'Tesla');
+VALUES ('Cybertruck','Tesla');
 
 DROP TABLE IF EXISTS MODEL;
 CREATE TABLE IF NOT EXISTS MODEL(
     ModelName varchar(20) NOT NULL,
     MSRP varchar(4) DEFAULT NULL,
     BodyType varchar(10) DEFAULT NULL,
-    SafetyRatingNHTSA varchar(1) DEFAULT NULL,
+    SafetyRating varchar(1) DEFAULT NULL,
     PRIMARY KEY (ModelName)
 );
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Prius','24625','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Avalon','36375','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Camry','25395','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Corolla','20425','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Supra','43540','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RAV4','26525','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Highlander','35855','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Land Cruiser','85665','SUV','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Venza','33240','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Yaris','17750','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Sienna','34710','Van','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CH-R','24130','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('4Runner','38105','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('86','27700','Sport Coupe','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Tundra','35950','Pickup','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Tacoma','27150','Pickup','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('IS','39125','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('ES','40800','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('LS','76100','Sedan','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('GS','51245','Sedan','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('LC','93050','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RC','42820','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('GX','56125','SUV','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('LX','86900','SUV','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('NX','37950','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RX','45920','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('LFA','375000','Sport Coupe','n/a');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Accord','26120','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CR-V','26400','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Civic','22350','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Clarity','59250','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Fit','16190','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('HR-V','21870','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Odyssey','33040','Van','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Pilot','37580','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Ridgeline','37640','Pickup','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('ILX','27300','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('MDX','48000','Suv','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('NSX','169500','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RDX','40100','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RLX','54900','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('TLX','38500','Sedan','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Ascent','32295','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('BRZ','27995','Sport Coupe','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Crosstrek','22645','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Forester','25395','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Impreza','18795','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Legacy','22995','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Outback','27145','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('WRX','30100','Sedan','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CX-3','22190','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CX-5','25900','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CX-9','35280','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('MX-30','33740','Coupact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Miata','27300','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Mazda6','23800','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Mazda3','20800','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RX-8','26645','Sport Coupe','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RX-7','37800','Sport Coupe','n/a');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('EV6','40900','Hatchback','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Forte','19090','Sedan','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Forte5','22200','Hatchback','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('K5','23790','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Niro','29590','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Optima','26890','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Rio','16250','Sedan',n/a'');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Seltos','22590','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Sorento','29590','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Soul','19290','Hatchback','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Stinger','36290','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Telluride','33090','SUV','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('NEXO','59435','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Tucson','24950','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Veloster N','32500','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Senta','27200','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Accent','16645','Sedan','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('IONIQ','39950','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Venue','19000','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Sonata','35700','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Elantra','20200','Sedan','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('2 Series','35700','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('3 Series','41450','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('4 Series','45200','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('5 Series','54200','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('i3','44450','Hatchback','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('i8','147500','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('M3','70100','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('M4','72000','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('M5','103700','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('M6','11900','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('M8','130000','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('X1','35400','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('X3','43700','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('X4','51800','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('X5','60600','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('X7','74900.','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Z4','49700','Sport Coupe','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('A-Class','33950','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('B-Class','38600','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('C-Class','43550','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('E-Class','54950','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('G-Class','133250','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('R-Class','52690','Van','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('S-Class','111100','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Metris','34900','Van','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('A','39900','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Q','43300','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('RS','118500','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('S','51900','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('TT','50500','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('e-tron','65900','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('R8','148700','Sport Coupe','n/a');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Boxster','100100','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cayenne','69000','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cayman','60500','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Macan','54900','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Panamera','88400','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('911','101200','Sport Coupe','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Clubman','29900','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Countryman','29100','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cooper','22900','Hatchback','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('4C','133000','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Giulia','43350','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Stelvio','45550','Compact SUV','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('E-PACE','41800','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('F-PACE','50900','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('F-TYPE','69900','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('XF','45300','Sedan','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('XJ','86500','Sport Coupe','n/a');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Bronco','30800','SUV','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('E','43895','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Maverick','19995','Pickup','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('F150','30495','Pickup','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Mustang','27205','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Expedition','69695','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Explorer','33745','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Edge','37145','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Ranger','25715','Pickup','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Transit','26175','Van','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('GT','542676','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Escape','26760','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Focus','32705','Hatchback','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Fiesta','14260','Hatchback','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Avalanche','32400','Pickup','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Bolt EV','31500','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Camaro','25000','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Captiva','21440','Compact SUV','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cobalt SS','21310','Sedan','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Colorado','25435','Sedan','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Corvette','60900','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cruze','18870','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Equinox','25800','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Impala','27000','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Sonic','16295','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Spark EV','26000','Hatchback','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Suburban','53200','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Tahoe','50500','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('TrailBlazer','21800','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Trax','21400','Compact SUV','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Avenger','26000','Sedan','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Caliber','12430','Compact SUV','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Challenger','30075','Sport Coupe','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Charger','32500','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Dart','16100.','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Durango','36995','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Journey','29917','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Ram1500','35900','Pcikup','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('C30','11300','Hatchback','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('C70','22400','Sport Coupe','n/a');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('V40','58750','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('S60','39250','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('S90','52850','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('V60','46200','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('V90','56200','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('XC60','42650','Compact SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('XC90','50900','SUV','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cherokee','29995','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Compass','26390','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Gladiator','36085','Pickup','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Renegade','24195','Compact SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Wrangler','29995','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Patriot','22000','Compact SUV','4');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('ATS','38995','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('CT','37000','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('DTS','48000','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('ELR','75995','Sport Coupe','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Escalade','76295','SUV','4');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('SRX','43995','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('XT','35795','SUV','5');
+
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Model S','99990','Sedan','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Model 3','46990','Hatchback','3');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Model X','114990','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Model Y','62990','SUV','5');
+INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
+VALUES ('Cybertruck','39900','Pickup','n/a');
+
+DROP TABLE IF EXISTS EV;
+CREATE TABLE IF NOT EXISTS EV(
+    ModelName varchar(20) NOT NULL,
+    ModelTrim varchar(10) DEFAULT NULL,
+    MaxRange varchar(3) DEFAULT NULL,
+    PRIMARY KEY (ModelName, ModelTrim)
+);
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model S','Base','405');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model S','Plaid','396');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model 3','Base','334');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model X','Base','360');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model X','Plaid','333');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Model Y','Base','330');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Clarity','Base','47');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('MX-30','Base','124');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('EV6','Base','261');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('IONIQ','Base','303');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('i3','Base','153');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('i8','Base','320');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('e-tron','Base','343');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('E','Base','305');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Bolt EV','Base','259');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('Spark EV','Base','82');
+INSERT INTO EV (ModelName, ModelTrim, MaxRange)
+VALUES ('V40','Base','188');
