@@ -6,7 +6,7 @@
         $getevquery = "SELECT ModelName FROM EV;";
         $EV = $database->query($getevquery);
 
-        $getrowsquery = "SELECT ModelName,ModelTrim FROM FEATURES;";
+        $getrowsquery = "SELECT * FROM FEATURES;";
         echo '<table><tr>
         <th>ModelName</th>
         <th>ModelTrim</th>
@@ -31,7 +31,6 @@
                     if($row['ModelName'] == $evrow['ModelName']){
                         $milehigh = 'n/a';
                         $milecity = 'n/a';
-                        break;
                     }
                 }
                 if(rand(0,1)==0) $blind='yes';
