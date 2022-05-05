@@ -79,7 +79,7 @@
     <script language="javascript" type="text/javascript">
         
         function dropdownbrand(brand){
-            var getModelsfromPhp = < ?php echo json_encode($getmodelsforJS); ?>;
+            var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
             document.getElementById("selectModels").length=1;
             if(brand){
                 let j=1;
@@ -92,7 +92,7 @@
         }
 
         function dropdownmodel(model){
-            var gettrimsfromPhp = < ?php echo json_encode($gettrimsforJS); ?>;
+            var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
             document.getElementById("selectTrims").length=1;
             if(brand){
                 let j=1;
