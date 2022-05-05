@@ -5,27 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script script="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <? php
+    <?php
         $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
         if ($db->connect_error) die("Connection failed: ".$db->connect_error)
-        $getbrandsquery = "SELECT BrandName FROM MAKES;";
+        $getbrandsquery = "SELECT BrandName FROM BRAND;";
+
+        $getmodelsquery = "SELECT * FROM MAKES;";
+        $getmodelsforJS = array();
+        if($getmodels=$database->query($getmodelsquery);){
+            while($getmodelsrows = $getmodels->fetch_assoc()){
+                $getmodelsforJS[]=$getmodelsrows;
+            }
+        }
+
+        $gettrimsquery = "SELECT * FROM FEATURES;";
+        $gettrimsforJS = array();
+        if($gettrims=$database->query($gettrimsquery);){
+            while($gettrimsrows = $gettrims->fetch_assoc()){
+                $gettrimsforJS[]=$gettrimsrows;
+            }
+        }
     ?>
     <div class="top">
         <h1>2022 Cars library</h1>
     </div>
     <div class="center">
-        <div class="iframe">
+
+        <button type="button" class="tabheader">Search information of a vehicle:</div>
+        <div class="content SearchFeatureByCarName">
+            <div class="iframe">
+
+            </div>
+            <div class="searchbox">
+                <form action="SearchInfo.php">
+                    <label>Select brand:</label>
+                    <select name="carBrand" id="selectBrands" onchange="dropdownbrand(this.options[this.selectedIndex].value)">
+                        <option value='*'>All brands</option>
+                        <?php if($result=$database->query($getbrandsquery)) {
+                            while ($row=$result->fetch_assoc()){
+                                $brand=$row['BrandName'];
+                                echo "<option value='$brand'>$brand</option>";
+                            }
+                        }
+                        ?>
+                    </select>
+                    <label>Select model:</label>
+                    <select name="carModel" id="selectModels" onchange="dropdownmodel(this.options[this.selectedIndex].value)">
+                        <option value='*'>All models</option>
+                    </select>
+                    <label>Select trims:</label>
+                    <select name="carTrims" id="selectTrims">
+                        <option value='*'>All trims</option>
+                    </select>
+                    <input type="submit" value="Search"></input>
+                </form>
+            </div>
+        </div>
+
+
+
+        <button type="button" class="tabheader"></button>
+        <div class="content">
 
         </div>
-        <div class="searchbox">
-            <form>
-                <label>Select brand:</label>
-                
-                <label>Select model:</label>
-            </form>
-        </div>
     </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        var getModelsfromPhp = <?php echo json_encode($getmodelsforJS) ?>;
+        var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS) ?>;
+        
+        function dropdownbrand(brand){
+            document.getElementById("selectModels").length=1;
+            if(brand){
+                let j=1;
+                for(let i=0;i<getModelsfromPhp.length;i++){
+                    if(getModelsfromPhp[i].BrandName == brand)
+                    document.getElementById("selectModels").options[j] = new Option(getModelsfromPhp[i].ModelName, getModelsfromPhp[i].ModelName);
+                    j++;
+                }
+            }
+        }
+
+        function dropdownmodel(model){
+            document.getElementById("selectTrims").length=1;
+            if(brand){
+                let j=1;
+                for(let i=0;i<getModelsfromPhp.length;i++){
+                    if(gettrimsfromPhp[i].BrandName == brand)
+                    document.getElementById("selectTrims").options[j] = new Option(gettrimsfromPhp[i].ModelTrim, gettrimsfromPhp[i].ModelTrim);
+                    j++;
+                }
+            }
+        }
+    </script>
+    <?php $database->close();?>
 </body>
 </html>
