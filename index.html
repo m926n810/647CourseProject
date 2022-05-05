@@ -15,7 +15,7 @@
 
         $getmodelsquery = "SELECT * FROM MAKES";
         $getmodelsforJS = array();
-        if($getmodels=$database->query($getmodelsquery);){
+        if($getmodels=$database->query($getmodelsquery)){
             while($getmodelsrows = $getmodels->fetch_assoc()){
                 $getmodelsforJS[]=$getmodelsrows;
             }
@@ -23,7 +23,7 @@
 
         $gettrimsquery = "SELECT * FROM FEATURES";
         $gettrimsforJS = array();
-        if($gettrims=$database->query($gettrimsquery);){
+        if($gettrims=$database->query($gettrimsquery)){
             while($gettrimsrows = $gettrims->fetch_assoc()){
                 $gettrimsforJS[]=$gettrimsrows;
             }
