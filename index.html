@@ -85,10 +85,11 @@
             if(brand){
                 let j=1;
                 for(let i=0;i<getModelsfromPhp.length;i++){
-                    if(getModelsfromPhp[i].BrandName == brand)
-                    console.log(getModelsfromPhp+ " vs "+ brand);
-                    document.getElementById("selectModels").options[j] = new Option(getModelsfromPhp[i].ModelName, getModelsfromPhp[i].ModelName);
-                    j++;
+                        if(getModelsfromPhp[i].BrandName == brand){
+                            console.log(getModelsfromPhp[i].BrandName+ " vs "+ brand);
+                            document.getElementById("selectModels").options[j] = new Option(getModelsfromPhp[i].ModelName, getModelsfromPhp[i].ModelName);
+                            j++;
+                    }
                 }
             }
         }
@@ -96,12 +97,13 @@
         function dropdownmodel(model){
             var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
             document.getElementById("selectTrims").length=1;
-            if(brand){
+            if(model){
                 let j=1;
                 for(let i=0;i<getModelsfromPhp.length;i++){
-                    if(gettrimsfromPhp[i].ModelTrim == model)
-                    document.getElementById("selectTrims").options[j] = new Option(gettrimsfromPhp[i].ModelTrim, gettrimsfromPhp[i].ModelTrim);
-                    j++;
+                    if(gettrimsfromPhp[i].ModelName == model){
+                        document.getElementById("selectTrims").options[j] = new Option(gettrimsfromPhp[i].ModelTrim, gettrimsfromPhp[i].ModelTrim);
+                        j++;
+                    }
                 }
             }
         }
