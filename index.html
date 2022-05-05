@@ -80,7 +80,11 @@
         
         function dropdownbrand(brand){
             var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
-            document.getElementById("selectModels").length=1;
+            
+            for(int i=1;i<document.getElementById("selectModels").length;i++){
+                document.getElementById("selectModels").remove(i);
+            }
+
             if(brand){
                 let j=1;
                 for(let i=0;i<getModelsfromPhp.length;i++){
@@ -93,11 +97,13 @@
 
         function dropdownmodel(model){
             var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
-            document.getElementById("selectTrims").length=1;
+            for(int i=1;i<document.getElementById("selectTrims").length;i++){
+                document.getElementById("selectTrims").remove(i);
+            }
             if(brand){
                 let j=1;
                 for(let i=0;i<getModelsfromPhp.length;i++){
-                    if(gettrimsfromPhp[i].BrandName == brand)
+                    if(gettrimsfromPhp[i].BrandName == model)
                     document.getElementById("selectTrims").options[j] = new Option(gettrimsfromPhp[i].ModelTrim, gettrimsfromPhp[i].ModelTrim);
                     j++;
                 }
