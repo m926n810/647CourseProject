@@ -24,16 +24,9 @@
             while($row = $result->fetch_assoc()){
                 $hrsprs = rand(80,800);
                 $weight = rand(2000,5000);
-                
-                while($evrow=$EV->fetch_assoc()){
-                    if($row['ModelName'] == $evrow['ModelName']){
-                        $milehigh = 'n/a';
-                        $milecity = 'n/a';
-                    }else{
-                        $milehigh = rand(14, 60);
-                        $milecity = rand(14, 60);
-                    }
-                }
+                $milehigh = rand(14, 60);
+                $milecity = rand(14, 60);
+
                 if(rand(0,1)==0) $blind='yes';
                 else $blind='no';
                 if(rand(0,4)!=0) $backupcam='yes';
