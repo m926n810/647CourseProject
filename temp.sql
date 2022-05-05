@@ -1,260 +1,424 @@
  
-VALUES ('Prius','LE','','');
-VALUES ('Prius','XLE','','');
-VALUES ('Avalon','XLE','','');
-VALUES ('Avalon','TRD','','');
-VALUES ('Avalon','Limited','','');
-VALUES ('Camry','LE','','');
-VALUES ('Camry','XLE','','');
-VALUES ('Camry','TRD','','');
-VALUES ('Corolla','LE','','');
-VALUES ('Corolla','XLE','','');
-VALUES ('Supra','Base','','');
-VALUES ('Supra','Premium','','');
-VALUES ('RAV4','LE','','');
-VALUES ('RAV4','XLE','','');
-VALUES ('RAV4','Limited','','');
-VALUES ('Highlander','LE','','','');
-VALUES ('Highlander','XLE','','','');
-VALUES ('Highlander','Limited','','');
-VALUES ('Land Cruiser','Base','','');
-VALUES ('Land Cruiser','Heritage','','');
-VALUES ('Venza','LE','','');
-VALUES ('Venza','XLE','','');
-VALUES ('Venza','Limited','','');
-VALUES ('Yaris','LE','','');
-VALUES ('Yaris','XLE','','');
-VALUES ('Sienna','LE','','');
-VALUES ('Sienna','XLE','','');
-VALUES ('Sienna','Limited','','');
-VALUES ('CH-R','LE','','');
-VALUES ('CH-R','XLE','','');
-VALUES ('CH-R','Limited','','');
-VALUES ('4Runner','Base','','');
-VALUES ('4Runner','TRD','','');
-VALUES ('86','Base','','');
-VALUES ('86','TRD','','');
-VALUES ('Tundra','SR','',''); 
-VALUES ('Tacoma','SR','','');
-VALUES ('Tacoma','Off-road','','');
+(ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,GPS,TemperatureSeats,Sunroof)
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof) 
+VALUES ('IS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('IS','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ES','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ES','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LS','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('GS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('GS','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LC','500h','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RC','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('GX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('GX','Premium','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LX','Premium','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LX','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('NX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('NX','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RX','Fsport','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('LFA','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
  
-VALUES ('IS','Base','','');
-VALUES ('IS','Fsport','','');
-VALUES ('ES','Base','','');
-VALUES ('ES','Fsport','','');
-VALUES ('LS','Base','','');
-VALUES ('LS','Fsport','','');
-VALUES ('GS','Base','','');
-VALUES ('GS','Fsport','','');
-VALUES ('LC','500h','','');
-VALUES ('RC','Fsport','','');
-VALUES ('GX','Base','','');
-VALUES ('GX','Premium','','');
-VALUES ('LX','Base','','');
-VALUES ('LX','Premium','','');
-VALUES ('LX','Fsport','','');
-VALUES ('NX','Base','','');
-VALUES ('NX','Fsport','','');
-VALUES ('RX','Base','','');
-VALUES ('RX','Fsport','','');
-VALUES ('LFA','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Accord','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Accord','EX-L','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CR-V','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CR-V','EX-L','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Civic','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Civic','EX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Clarity','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Fit','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Fit','EX-L','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('HR-V','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('HR-V','EX_L','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Odyssey','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Odyssey','EX-L','100','no','no','no','no','no','no','no','no','no'); 
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Pilot','LX','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Pilot','EX-L','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Ridgeline','RTL','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Accord','LX','','');
-VALUES ('Accord','EX-L','','');
-VALUES ('CR-V','LX','','');
-VALUES ('CR-V','EX-L','','');
-VALUES ('Civic','LX','','');
-VALUES ('Civic','EX','','');
-VALUES ('Clarity','Base','','');
-VALUES ('Fit','LX','','');
-VALUES ('Fit','EX-L','','');
-VALUES ('HR-V','LX','','');
-VALUES ('HR-V','EX_L','','');
-VALUES ('Odyssey','LX','','');
-VALUES ('Odyssey','EX-L','',''); 
-VALUES ('Pilot','LX','','');
-VALUES ('Pilot','EX-L','','');
-VALUES ('Ridgeline','RTL','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ILX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ILX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('MDX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('MDX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('NSX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('NSX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RDX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RDX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RLX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RLX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('TLX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('TLX','Advance','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
  
-VALUES ('ILX','Base','','');
-VALUES ('ILX','Advance','','');
-VALUES ('MDX','Base','','');
-VALUES ('MDX','Advance','','');
-VALUES ('NSX','Base','','');
-VALUES ('NSX','Advance','','');
-VALUES ('RDX','Base','','');
-VALUES ('RDX','Advance','','');
-VALUES ('RLX','Base','','');
-VALUES ('RLX','Advance','','');
-VALUES ('TLX','Base','','');
-VALUES ('TLX','Advance','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Ascent','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('BRZ','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Crosstrek','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Forester','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Impreza','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Legacy','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Outback','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('WRX','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Ascent','Base','','');
-VALUES ('BRZ','Base','','');
-VALUES ('Crosstrek','Base','','');
-VALUES ('Forester','Base','','');
-VALUES ('Impreza','Base','','');
-VALUES ('Legacy','Base','','');
-VALUES ('Outback','Base','','');
-VALUES ('WRX','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CX-3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CX-5','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CX-9','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('MX-30','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Miata','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Mazda6','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Mazda3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RX-8','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RX-7','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('CX-3','Base','','');
-VALUES ('CX-5','Base','','');
-VALUES ('CX-9','Base','','');
-VALUES ('MX-30','Base','','');
-VALUES ('Miata','Base','','');
-VALUES ('Mazda6','Base','','');
-VALUES ('Mazda3','Base','','');
-VALUES ('RX-8','Base','','');
-VALUES ('RX-7','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('EV6','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Forte','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Forte5','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('K5','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Niro','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Optima','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Rio','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Seltos','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Sorento','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Soul','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Stinger','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Telluride','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('EV6','Base','','');
-VALUES ('Forte','Base','','');
-VALUES ('Forte5','Base','','');
-VALUES ('K5','Base','','');
-VALUES ('Niro','Base','','');
-VALUES ('Optima','Base','','');
-VALUES ('Rio','Base','','');
-VALUES ('Seltos','Base','','');
-VALUES ('Sorento','Base','','');
-VALUES ('Soul','Base','','');
-VALUES ('Stinger','Base','','');
-VALUES ('Telluride','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('NEXO','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Tucson','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Veloster N','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Senta','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Accent','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('IONIQ','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Venue','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Sonata','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Elantra','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('NEXO','Base','','');
-VALUES ('Tucson','Base','','');
-VALUES ('Veloster N','Base','','');
-VALUES ('Senta','Base','','');
-VALUES ('Accent','Base','','');
-VALUES ('IONIQ','Base','','');
-VALUES ('Venue','Base','','');
-VALUES ('Sonata','Base','','');
-VALUES ('Elantra','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('2 Series','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('3 Series','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('4 Series','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('5 Series','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('i3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('i8','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('M3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('M4','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('M5','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('M6','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('M8','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('X1','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('X3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('X4','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('X5','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('X7','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Z4','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('2 Series','Base','','');
-VALUES ('3 Series','Base','','');
-VALUES ('4 Series','Base','','');
-VALUES ('5 Series','Base','','');
-VALUES ('i3','Base','','');
-VALUES ('i8','Base','','');
-VALUES ('M3','Base','','');
-VALUES ('M4','Base','','');
-VALUES ('M5','Base','','');
-VALUES ('M6','Base','','');
-VALUES ('M8','Base','','');
-VALUES ('X1','Base','','');
-VALUES ('X3','Base','','');
-VALUES ('X4','Base','','');
-VALUES ('X5','Base','','');
-VALUES ('X7','Base','','');
-VALUES ('Z4','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('A-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('B-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('C-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('E-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('G-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('R-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('S-Class','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Metris','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('A-Class','Base','','');
-VALUES ('B-Class','Base','','');
-VALUES ('C-Class','Base','','');
-VALUES ('E-Class','Base','','');
-VALUES ('G-Class','Base','','');
-VALUES ('R-Class','Base','','');
-VALUES ('S-Class','Base','','');
-VALUES ('Metris','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('A','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Q','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('RS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('S','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('TT','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('e-tron','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('R8','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('A','Base','','');
-VALUES ('Q','Base','','');
-VALUES ('RS','Base','','');
-VALUES ('S','Base','','');
-VALUES ('TT','Base','','');
-VALUES ('e-tron','Base','','');
-VALUES ('R8','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Boxster','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cayenne','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cayman','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Macan','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Panamera','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('911','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Boxster','Base','','');
-VALUES ('Cayenne','Base','','');
-VALUES ('Cayman','Base','','');
-VALUES ('Macan','Base','','');
-VALUES ('Panamera','Base','','');
-VALUES ('911','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Clubman','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Countryman','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cooper','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Clubman','Base','','');
-VALUES ('Countryman','Base','','');
-VALUES ('Cooper','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('4C','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Giulia','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Stelvio','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('4C','Base','','');
-VALUES ('Giulia','Base','','');
-VALUES ('Stelvio','Base','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('E-PACE','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('F-PACE','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('F-TYPE','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('XF','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('XJ','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('E-PACE','41800','','');
-VALUES ('F-PACE','50900','','');
-VALUES ('F-TYPE','69900','','');
-VALUES ('XF','45300','','');
-VALUES ('XJ','86500','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Bronco','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('E','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Maverick','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('F150','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Mustang','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Expedition','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Explorer','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Edge','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Ranger','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Transit','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('GT','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Escape','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Focus','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Fiesta','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Bronco','30800','','');
-VALUES ('E','43895','  ','');
-VALUES ('Maverick','19995','','');
-VALUES ('F150','30495','','');
-VALUES ('Mustang','27205','','');
-VALUES ('Expedition','69695','','');
-VALUES ('Explorer','33745','','');
-VALUES ('Edge','37145','','');
-VALUES ('Ranger','25715','','');
-VALUES ('Transit','26175','','');
-VALUES ('GT','542676','','');
-VALUES ('Escape','26760','','');
-VALUES ('Focus','32705','','');
-VALUES ('Fiesta','14260','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Avalanche','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Bolt EV','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Camaro','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Captiva','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cobalt SS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Colorado','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Corvette','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cruze','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Equinox','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Impala','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Sonic','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Spark EV','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Suburban','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Tahoe','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('TrailBlazer','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Trax','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Avalanche','32400','','');
-VALUES ('Bolt EV','31500','  ','');
-VALUES ('Camaro','25000','','');
-VALUES ('Captiva','21440','','');
-VALUES ('Cobalt SS','21310','','');
-VALUES ('Colorado','25435','','');
-VALUES ('Corvette','60900','','');
-VALUES ('Cruze','18870','','');
-VALUES ('Equinox','25800','','');
-VALUES ('Impala','27000','','');
-VALUES ('Sonic','16295','','');
-VALUES ('Spark EV','26000','','');
-VALUES ('Suburban','53200','','');
-VALUES ('Tahoe','50500','','');
-VALUES ('TrailBlazer','21800','','');
-VALUES ('Trax','21400','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Avenger','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Caliber','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Challenger','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Charger','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Dart','1Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Durango','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Journey','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Ram1500','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Avenger','26000','','');
-VALUES ('Caliber','12430','','');
-VALUES ('Challenger','30075','','');
-VALUES ('Charger','32500','','');
-VALUES ('Dart','16100.','','');
-VALUES ('Durango','36995','','');
-VALUES ('Journey','29917','','');
-VALUES ('Ram1500','35900','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('C30','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('C70','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('V40','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('S60','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('S90','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('V60','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('V90','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('XC60','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('XC90','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('C30','11300','','');
-VALUES ('C70','22400','','');
-VALUES ('V40','58750','','');
-VALUES ('S60','39250','','');
-VALUES ('S90','52850','','');
-VALUES ('V60','46200','','');
-VALUES ('V90','56200','','');
-VALUES ('XC60','42650','','');
-VALUES ('XC90','50900','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cherokee','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Compass','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Gladiator','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Renegade','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Wrangler','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Patriot','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('Cherokee','29995','','');
-VALUES ('Compass','26390','','');
-VALUES ('Gladiator','36085','','');
-VALUES ('Renegade','24195','','');
-VALUES ('Wrangler','29995','','');
-VALUES ('Patriot','22000','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ATS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('CT','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('DTS','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('ELR','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Escalade','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('SRX','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('XT','Base','100','no','no','no','no','no','no','no','no','no');
  
-VALUES ('ATS','38995','','');
-VALUES ('CT','37000','','');
-VALUES ('DTS','48000','','');
-VALUES ('ELR','75995','','');
-VALUES ('Escalade','76295','','');
-VALUES ('SRX','43995','','');
-VALUES ('XT','35795','','');
- 
-VALUES ('Model S','99990','','');
-VALUES ('Model 3','46990','','');
-VALUES ('Model X','11990','','');
-VALUES ('Model Y','62990','','');
-VALUES ('Cybertruck','39900','','');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Model S','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Model 3','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Model X','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Model Y','Base','100','no','no','no','no','no','no','no','no','no');
+INSERT INTO FEATURES (ModelName,ModelTrim,HorsePower,Weightt,Mileleague_city,Mileleague_high,Blindspotcensor,BackupCamera,AWD,GPS,TemperatureSeats,Sunroof)
+VALUES ('Cybertruck','Base','100','no','no','no','no','no','no','no','no','no');
