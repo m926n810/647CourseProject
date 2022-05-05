@@ -6,7 +6,7 @@
         $getevquery = "SELECT ModelName FROM EV;";
         $EV = $database->query($getevquery);
 
-        $getrowsquery = "SELECT ModelName, ModelTrim FROM FEATURES;";
+        $getrowsquery = "SELECT ModelName,ModelTrim FROM FEATURES;";
         echo '<table><tr>
         <th>ModelName</th>
         <th>ModelTrim</th>
@@ -58,9 +58,9 @@
                                     GPS = '$gps',
                                     TemperatureSeats = '$tempseats',
                                     Sunroof = '$sunroof'
-                                WHERE   ModelName =". $row['ModelName']."AND
-                                        ModelTrim = ".$row['ModelTrim'].";";
-                if($database->query($updatequery)) {
+                                WHERE   ModelName = '". $row['ModelName']."' AND ModelTrim = '".$row['ModelTrim']."';";
+                                echo $updatequery;
+                if($database->query($updatequery)===TRUE) {
                     echo '<tr>
                     <td>'.$row['ModelName'].'</td>
                     <td>'.$row['ModelTrim'].'</td>
