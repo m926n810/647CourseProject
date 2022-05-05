@@ -10,12 +10,15 @@
 <body>
     <?php
         $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
-        if ($db->connect_error){ die("Connection failed: ".$db->connect_error);}
+        if ($db->connect_error){ 
+            die("Connection failed: ".$db->connect_error);
+        }
+
         $getbrandsquery = "SELECT BrandName FROM BRAND";
 
         $getmodelsquery = "SELECT * FROM MAKES";
         $getmodelsforJS = array();
-        if($getmodels=$database->query($getmodelsquery)){
+        if($getmodels=$db->query($getmodelsquery)){
             while($getmodelsrows = $getmodels->fetch_assoc()){
                 $getmodelsforJS[]=$getmodelsrows;
             }
@@ -23,7 +26,7 @@
 
         $gettrimsquery = "SELECT * FROM FEATURES";
         $gettrimsforJS = array();
-        if($gettrims=$database->query($gettrimsquery)){
+        if($gettrims=$db->query($gettrimsquery)){
             while($gettrimsrows = $gettrims->fetch_assoc()){
                 $gettrimsforJS[]=$gettrimsrows;
             }
@@ -42,9 +45,9 @@
             <div class="searchbox">
                 <form action="SearchInfo.php">
                     <label>Select brand:</label>
-                    <select name="carBrand" id="selectBrands" onchange="dropdownbrand(this.options[this.selectedIndex].value)">
+                    <select name="carBrand" id="selectBrands" onchange="javascript: dropdownbrand(this.options[this.selectedIndex].value);">
                         <option value='*'>All brands</option>
-                        <?php if($result=$database->query($getbrandsquery)) {
+                        <?php if($result=$db->query($getbrandsquery)) {
                             while ($row=$result->fetch_assoc()){
                                 $brand=$row['BrandName'];
                                 echo "<option value='$brand'>$brand</option>";
@@ -53,7 +56,7 @@
                         ?>
                     </select>
                     <label>Select model:</label>
-                    <select name="carModel" id="selectModels" onchange="dropdownmodel(this.options[this.selectedIndex].value)">
+                    <select name="carModel" id="selectModels" onchange="javascript: dropdownmodel(this.options[this.selectedIndex].value);">
                         <option value='*'>All models</option>
                     </select>
                     <label>Select trims:</label>
@@ -74,10 +77,9 @@
     </div>
     </div>
     <script language="javascript" type="text/javascript">
-        var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
-        var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
         
         function dropdownbrand(brand){
+            var getModelsfromPhp = < ?php echo json_encode($getmodelsforJS); ?>;
             document.getElementById("selectModels").length=1;
             if(brand){
                 let j=1;
@@ -90,6 +92,7 @@
         }
 
         function dropdownmodel(model){
+            var gettrimsfromPhp = < ?php echo json_encode($gettrimsforJS); ?>;
             document.getElementById("selectTrims").length=1;
             if(brand){
                 let j=1;
@@ -101,6 +104,6 @@
             }
         }
     </script>
-    <?php $database->close();?>
+    <?php $db->close();?>
 </body>
 </html>
