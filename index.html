@@ -81,7 +81,7 @@
         function dropdownbrand(brand){
             var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
             
-            for(int i=1;i<document.getElementById("selectModels").length;i++){
+            for(let i=1;i<document.getElementById("selectModels").length;i++){
                 document.getElementById("selectModels").remove(i);
             }
 
@@ -97,7 +97,7 @@
 
         function dropdownmodel(model){
             var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
-            for(int i=1;i<document.getElementById("selectTrims").length;i++){
+            for(let i=1;i<document.getElementById("selectTrims").length;i++){
                 document.getElementById("selectTrims").remove(i);
             }
             if(brand){
