@@ -10,10 +10,10 @@
 <body>
     <?php
         $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
-        if ($db->connect_error) die("Connection failed: ".$db->connect_error)
-        $getbrandsquery = "SELECT BrandName FROM BRAND;";
+        if ($db->connect_error){ die("Connection failed: ".$db->connect_error);}
+        $getbrandsquery = "SELECT BrandName FROM BRAND";
 
-        $getmodelsquery = "SELECT * FROM MAKES;";
+        $getmodelsquery = "SELECT * FROM MAKES";
         $getmodelsforJS = array();
         if($getmodels=$database->query($getmodelsquery);){
             while($getmodelsrows = $getmodels->fetch_assoc()){
@@ -21,7 +21,7 @@
             }
         }
 
-        $gettrimsquery = "SELECT * FROM FEATURES;";
+        $gettrimsquery = "SELECT * FROM FEATURES";
         $gettrimsforJS = array();
         if($gettrims=$database->query($gettrimsquery);){
             while($gettrimsrows = $gettrims->fetch_assoc()){
@@ -74,8 +74,8 @@
     </div>
     </div>
     <script language="javascript" type="text/javascript">
-        var getModelsfromPhp = <?php echo json_encode($getmodelsforJS) ?>;
-        var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS) ?>;
+        var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
+        var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
         
         function dropdownbrand(brand){
             document.getElementById("selectModels").length=1;
