@@ -59,7 +59,6 @@
                                     TemperatureSeats = '$tempseats',
                                     Sunroof = '$sunroof'
                                 WHERE   ModelName = '". $row['ModelName']."' AND ModelTrim = '".$row['ModelTrim']."';";
-                                echo $updatequery;
                 if($database->query($updatequery)===TRUE) {
                     echo '<tr>
                     <td>'.$row['ModelName'].'</td>
