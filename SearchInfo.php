@@ -34,11 +34,10 @@ if($brand == '*' || $model == '*'){
     $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating FROM FEATURES 
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
                 JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
-    if($brand!='*') $query=$query." AND MAKES.BrandName=$brand";
+    if($brand!='*') $query=$query." AND MAKES.BrandName='$brand'";
     $query=$query." ORDER BY MAKES.BrandName, MODEL.ModelName;";
 
     echo $query;
-    echo $db->query($query);
     if($result = $db->query($query)){
         while($row=$result->fetch_assoc()){
             echo "<tr>
@@ -65,12 +64,11 @@ if($brand == '*' || $model == '*'){
     $result->free();       
 }else{
     $queryelse="SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName=$model
-                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName=$brand";
-    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName='$model'
+                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName='$brand'";
+    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim='$trim';";}
     
     echo "<br>".$queryelse;
-    echo $db->query($queryelse);
     if($resultelse = $db->query($queryelse)){
         while($rowelse = $resultelse->fetch_assoc()){
             echo '<div class="carinfobox">
