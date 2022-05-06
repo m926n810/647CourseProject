@@ -53,7 +53,10 @@ if($resultelse = $db->query($queryelse)){
         }
         $resultelse->free();
 
-        
+            if($brand!='*') $query=$query." AND MAKES.BrandName=$brand";
+    $query=$query." ORDER BY BRAND.BrandName, MODEL.ModelName;";
+
+
     if($result = $db->query($query)){
         while($row=$result->fetch_assoc()){
             echo "<tr>
@@ -78,3 +81,7 @@ if($resultelse = $db->query($queryelse)){
     }
     echo '</table>';
     $result->free();    
+
+
+    
+    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
