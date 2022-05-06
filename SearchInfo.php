@@ -82,7 +82,7 @@ if($brand == '*' || $model == '*'){
                     <table class="basicinfotable">
                         <tr>    
                             <th>MSRP: </th>
-                            <td>$'.number_format(intval($rowelse["MSRP"],2,'.',',')).'</td>
+                            <td>$'.number_format(intval($rowelse["MSRP"]),2,'.',',').'</td>
                         </tr>
                         <tr>    
                             <th>Body type: </th>
