@@ -10,42 +10,7 @@ if ($db->connect_error){
 $brand=$_POST("carBrand");
 $model=$_POST("carModel");
 $trim=$_POST("carTrim");
-if($brand == '*' || $model == '*'){
-    echo "
-    <table>
-        <tr>
-            <th>Brand</th>
-            <th>Model Name</th>
-            <th>MSRP</th>
-            <th>Body type</th>
-            <th>safety rating</th>
-            <th>Trim</th>
-            <th>Horse Power</th>
-            <th>Weight</th>
-            <th>Local</th>
-            <th>Highway</th>
-            <th>Blind-spot censors</th>
-            <th>Back-up camera</th>
-            <th>AWD option</th>
-            <th>GPS</th>
-            <th>Hot/cold seats</th>
-            <th>Sunroof<th>
-        </tr>";
-    $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
-                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
 
-
-    echo $query;
-   
-}else{
-    $queryelse="SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName=$model
-                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName=$brand";
-    
-    echo "<br>".$queryelse;
-
-    
-}
+echo "<p>".$brand.$model.$trim."</p>";
 $db->close();
 ?>
