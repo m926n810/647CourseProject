@@ -49,8 +49,8 @@ if($brand == '*' || $model == '*'){
                     <td>".$row['ModelTrim']."</td>
                     <td>".$row['HorsePower']." hp</td>
                     <td>".$row['Weightt']." ibs</td>
-                    <td>".$row['MileLeague_city']." mpg</td>
-                    <td>".$row['MileLeague_high']." mpg</td>
+                    <td>".$row['Mileleague_city']." mpg</td>
+                    <td>".$row['Mileleague_high']." mpg</td>
                     <td>".$row['Blindspotcensor']."</td>
                     <td>".$row['BackupCamera']."</td>
                     <td>".$row['AWD']."</td>
