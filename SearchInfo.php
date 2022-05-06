@@ -43,7 +43,7 @@ if($brand == '*' || $model == '*'){
             echo "<tr>
                     <td>".$row['BrandName']."</td>
                     <td>".$row['ModelName']."</td>
-                    <td>$".number_format(intval($rowelse["MSRP"]),2,'.',',')."</td>
+                    <td>$".number_format(intval($row["MSRP"]),2,'.',',')."</td>
                     <td>".$row['BodyType']."</td>
                     <td>".$row['SafetyRating']."/5</td>
                     <td>".$row['ModelTrim']."</td>
