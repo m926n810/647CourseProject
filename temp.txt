@@ -16,3 +16,10 @@
             
             <th></th>
         </tr>
+        
+    if($brand!='*') $query=$query." WHERE BRAND.BrandName=$brand";
+    $query=$query." ORDER BY BRAND.BrandName, MODEL.ModelName;";
+
+    
+    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
+    $queryelse=$queryelse." ORDER BY BRAND.BrandName, MODEL.ModelName;";

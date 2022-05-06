@@ -32,10 +32,8 @@ if($brand == '*' || $model == '*'){
             <th>Sunroof<th>
         </tr>";
     $query = "SELECT * FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName = FEATURES.ModelName
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
                 JOIN BRAND ON MODEL.BrandName=BRAND.BrandName";
-    if($brand!='*') $query=$query." WHERE BRAND.BrandName=$brand";
-    $query=$query." ORDER BY BRAND.BrandName, MODEL.ModelName;";
 
     echo $query;
 
@@ -65,12 +63,10 @@ if($brand == '*' || $model == '*'){
     $result->free();       
 }else{
     $queryelse="SELECT * FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName = FEATURES.ModelName
-                JOIN BRAND ON MODEL.BrandName = BRAND.BrandName
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
+                JOIN BRAND ON MODEL.BrandName=BRAND.BrandName
                 WHERE MODEL.BrandName=$brand
                 AND MODEL.ModelName=$model";
-    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
-    $queryelse=$queryelse." ORDER BY BRAND.BrandName, MODEL.ModelName;";
     
     echo "<br>".$queryelse;
 
@@ -93,11 +89,11 @@ if($brand == '*' || $model == '*'){
                         </tr>
                         <tr>    
                             <th>Safety rating: </th>
-                            <td></td>
+                            <td>'.$rowelse["SafetyRating"].'</td>
                         </tr>
                         <tr>    
                             <th>Horsepower: </th>
-                            <td>'.$rowelse["SafetyRating"].'</td>
+                            <td>'.$rowelse["HorsePower"].'</td>
                         </tr>
                         <tr>    
                             <th>Weight: </th>
