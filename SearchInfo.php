@@ -31,7 +31,7 @@ if($brand == '*' || $model == '*'){
             <th>Hot/cold seats</th>
             <th>Sunroof<th>
         </tr>";
-    $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
+    $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileage_high,Mileage_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
                 JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
     if($brand!='*') $query=$query." AND MAKES.BrandName='$brand'";
@@ -49,8 +49,8 @@ if($brand == '*' || $model == '*'){
                     <td>".$row['ModelTrim']."</td>
                     <td>".$row['HorsePower']." hp</td>
                     <td>".$row['Weightt']." ibs</td>
-                    <td>".$row['Mileleague_city']." mpg</td>
-                    <td>".$row['Mileleague_high']." mpg</td>
+                    <td>".$row['Mileage_city']." mpg</td>
+                    <td>".$row['Mileage_high']." mpg</td>
                     <td>".$row['Blindspotcensor']."</td>
                     <td>".$row['Backupcamera']."</td>
                     <td>".$row['AWD']."</td>
@@ -63,7 +63,7 @@ if($brand == '*' || $model == '*'){
     echo '</table>';
     $result->free();       
 }else{
-    $queryelse="SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileleague_high,Mileleague_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
+    $queryelse="SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileage_high,Mileage_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName='$model'
                 JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName='$brand'";
     if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim='$trim';";}
@@ -99,12 +99,12 @@ if($brand == '*' || $model == '*'){
                             <td>'.$rowelse["Weightt"].' pounds</td>
                         </tr>
                         <tr>    
-                            <th>Mileleague city: </th>
-                            <td>'.$rowelse["Mileleague_city"].' miles per gallon</td>
+                            <th>Gas Mileage city: </th>
+                            <td>'.$rowelse["Mileage_city"].' miles per gallon</td>
                         </tr>
                         <tr>    
-                            <th>Mileleague highway: </th>
-                            <td>'.$rowelse["Mileleague_high"].' miles per gallons</td>
+                            <th>Gas Mileage highway: </th>
+                            <td>'.$rowelse["Mileage_high"].' miles per gallons</td>
                         </tr>
                     </table>
                 </div>
