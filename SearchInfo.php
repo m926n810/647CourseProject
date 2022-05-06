@@ -33,7 +33,9 @@ if($brand == '*' || $model == '*'){
         </tr>";
     $query = "SELECT * FROM FEATURES 
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
-                JOIN BRAND ON MODEL.BrandName=BRAND.BrandName";
+                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
+    if($brand!='*') $query=$query." AND MAKES.BrandName=$brand";
+    $query=$query." ORDER BY BRAND.BrandName, MODEL.ModelName;";
 
     echo $query;
 
@@ -63,10 +65,9 @@ if($brand == '*' || $model == '*'){
     $result->free();       
 }else{
     $queryelse="SELECT * FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
-                JOIN BRAND ON MODEL.BrandName=BRAND.BrandName
-                WHERE MODEL.BrandName=$brand
-                AND MODEL.ModelName=$model";
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName=$model
+                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName=$brand";
+    if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
     
     echo "<br>".$queryelse;
 
