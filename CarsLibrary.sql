@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS COUNTRY;
-CREATE TABLE IF NOT EXISTS COUNTRY(
+CREATE TABLE IF NOT EXISTS COUNTRY (
     CountryName varchar(10) NOT NULL,
     Region varchar(20) DEFAULT NULL,
     PRIMARY KEY (CountryName)
@@ -18,7 +18,7 @@ INSERT INTO COUNTRY (CountryName, Region)
 VALUES ('America','North America');
 
 DROP TABLE IF EXISTS BRAND;
-CREATE TABLE IF NOT EXISTS BRAND(
+CREATE TABLE IF NOT EXISTS BRAND (
     BrandName varchar(20) NOT NULL,
     CountryName varchar(10) DEFAULT NULL,
     PRIMARY KEY (BrandName)
@@ -69,7 +69,7 @@ INSERT INTO BRAND (BrandName, CountryName)
 VALUES ('Tesla','America');
 
 DROP TABLE IF EXISTS MAKES;
-CREATE TABLE IF NOT EXISTS MAKES(
+CREATE TABLE IF NOT EXISTS MAKES (
     ModelName varchar(20) NOT NULL,
     BrandName varchar(20) DEFAULT NULL,
     PRIMARY KEY (ModelName)
@@ -487,7 +487,7 @@ INSERT INTO MAKES (ModelName, BrandName)
 VALUES ('Cybertruck','Tesla');
 
 DROP TABLE IF EXISTS MODEL;
-CREATE TABLE IF NOT EXISTS MODEL(
+CREATE TABLE IF NOT EXISTS MODEL (
     ModelName varchar(20) NOT NULL,
     MSRP varchar(6) DEFAULT NULL,
     BodyType varchar(20) DEFAULT NULL,
@@ -905,7 +905,7 @@ INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating)
 VALUES ('Cybertruck','39900','Pickup','n/a');
 
 DROP TABLE IF EXISTS EV;
-CREATE TABLE IF NOT EXISTS EV(
+CREATE TABLE IF NOT EXISTS EV (
     ModelName varchar(20) NOT NULL,
     ModelTrim varchar(10) DEFAULT NULL,
     MaxRange varchar(3) DEFAULT NULL,
@@ -947,7 +947,7 @@ INSERT INTO EV (ModelName, ModelTrim, MaxRange)
 VALUES ('V40','Base','188');
 
 DROP TABLE IF EXISTS FEATURES;
-CREATE TABLE IF NOT EXISTS FEATURES(
+CREATE TABLE IF NOT EXISTS FEATURES (
     ModelName varchar(20) NOT NULL,
     ModelTrim varchar(10) NOT NULL,
     HorsePower varchar(4) DEFAULT NULL,

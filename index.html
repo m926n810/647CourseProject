@@ -40,10 +40,10 @@
         <button type="button" class="tabheader">Search information of a vehicle:</div>
         <div class="content SearchFeatureByCarName">
             <div class="iframe">
-
+                <iframe id="searchresult"></iframe>
             </div>
             <div class="searchbox">
-                <form action="SearchInfo.php">
+                <form action="SearchInfo.php" method="post">
                     <label>Select brand:</label>
                     <select name="carBrand" id="selectBrands" onchange="javascript: dropdownbrand(this.options[this.selectedIndex].value); document.getElementById('selectTrims').length=1;">
                         <option value='*'>All brands</option>
@@ -60,7 +60,7 @@
                         <option value='*'>All models</option>
                     </select>
                     <label>Select trims:</label>
-                    <select name="carTrims" id="selectTrims">
+                    <select name="carTrim" id="selectTrims">
                         <option value='*'>All trims</option>
                     </select>
                     <input type="submit" value="Search"></input>

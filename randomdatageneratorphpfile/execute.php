@@ -3,9 +3,6 @@
     if ($database->connect_error) {
         die("Connect failed: ".$myqsli->connect_error);
     }else{
-        $getevquery = "SELECT ModelName FROM EV;";
-        $EV = $database->query($getevquery);
-
         $getrowsquery = "SELECT * FROM FEATURES;";
         echo '<table><tr>
         <th>ModelName</th>

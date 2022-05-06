@@ -1,0 +1,9 @@
+.carinfobox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.featurebox{
+    display:flex;
+    align-items: flex-start;
+}
