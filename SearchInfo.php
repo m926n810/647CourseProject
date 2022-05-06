@@ -35,10 +35,10 @@ if($brand == '*' || $model == '*'){
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
                 JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
     if($brand!='*') $query=$query." AND MAKES.BrandName=$brand";
-    $query=$query." ORDER BY BRAND.BrandName, MODEL.ModelName;";
+    $query=$query." ORDER BY MAKES.BrandName, MODEL.ModelName;";
 
     echo $query;
-
+    echo $db->query($query);
     if($result = $db->query($query)){
         while($row=$result->fetch_assoc()){
             echo "<tr>
@@ -70,7 +70,7 @@ if($brand == '*' || $model == '*'){
     if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim=$trim;";}
     
     echo "<br>".$queryelse;
-
+    echo $db->query($queryelse);
     if($resultelse = $db->query($queryelse)){
         while($rowelse = $resultelse->fetch_assoc()){
             echo '<div class="carinfobox">
