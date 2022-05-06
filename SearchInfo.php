@@ -1,6 +1,6 @@
 <?php 
 echo "<head>
-
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>";
 $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
