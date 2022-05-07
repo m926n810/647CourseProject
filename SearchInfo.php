@@ -37,7 +37,6 @@ if($brand == '*' || $model == '*'){
     if($brand!='*') $query=$query." AND MAKES.BrandName='$brand'";
     $query=$query." ORDER BY MAKES.BrandName, MODEL.ModelName;";
 
-    echo $query;
     if($result = $db->query($query)){
         while($row=$result->fetch_assoc()){
             echo "<tr>
