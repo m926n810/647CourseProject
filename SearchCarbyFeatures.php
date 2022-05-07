@@ -41,6 +41,26 @@ if($tempseats=="yes") $query.=" AND TemperatureSeats == 'yes'";
 if($sunroof=="yes") $query.=" AND Sunroof == 'yes'";
 
 echo $query;
+echo "
+    <table>
+        <tr>
+            <th>Brand</th>
+            <th>Model Name</th>
+            <th>MSRP</th>
+            <th>Body type</th>
+            <th>safety rating</th>
+            <th>Trim</th>
+            <th>Horse Power</th>
+            <th>Weight</th>
+            <th>Local</th>
+            <th>Highway</th>
+            <th>Blind-spot censors</th>
+            <th>Back-up camera</th>
+            <th>AWD option</th>
+            <th>GPS</th>
+            <th>Hot/cold seats</th>
+            <th>Sunroof<th>
+        </tr>";
 
 if($result = $db->query($query)){
     while($row=$result->fetch_assoc()){
@@ -64,6 +84,7 @@ if($result = $db->query($query)){
             </tr>";
     }
     $result->free();
+    echo "</table>";
 }
 $db->close();
 ?>
