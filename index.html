@@ -85,6 +85,7 @@
                                 $body2=$row2['BodyType'];
                                 echo "<option value='$body2'>$body2</option>";
                             }
+                            $result2->free();
                         }
                         ?>
                     </select><br>
@@ -96,6 +97,7 @@
                                 $safe=$row3['SafetyRating'];
                                 echo "<option value='$safe'>$safe</option>";
                             }
+                            $result3->free();
                         }
                         ?>
                     </select><br>
@@ -190,29 +192,121 @@
                                     <td>".$row4['Sunroof']."</td>
                                 </tr>";
                         }
+                        $result4->free();
                     }
                 ?>
             </table>
         </div>
 
-        <button type="button" class="tabheader">tops 10: </button>
+        <button type="button" class="tabheader">tops 5: </button>
         <div>
-            <label>Top 10 most expensive vehicles:</label>
+            <label>Top 5 most expensive vehicles:</label>
             <?php 
             $expquery="SELECT MODEL.ModelName,MAKES.BrandName,MSRP 
                         FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
                         ORDER BY MSRP DESC
-                        LIMIT 10"
+                        LIMIT 5"
+            if($result5 = $db->query($expquery)){
+                $count=1;
+                while($row5=$result5->fetch_assoc()){
+                    echo "<h5>$count: ".$row5["BrandName"]." ".$row5["ModelName"]." $".number_format($row5['MSRP'],2,'.',',')."</h5>";
+                    $count++;
+                }
+                $result5->free();
+            }
             ?>
         </div>
         <div>
-            <label>Top 10 most gas saving trucks:</label>
+            <label>Top 5 most gas saving trucks:</label>
+            <table class="top5">
+                <tr>
+                    <th>Brand</th>
+                    <th>Model Name</th>
+                    <th>Trim</th>
+                    <th>City Mileage</th>
+                    <th>Highway Mileage</th>
+                    <th>Average Mileage</th>
+                </tr>
+                <?php
+                $puquery="SELECT MODEL.ModelName,MAKES.BrandName,FEATURES.ModelTrim,Mileage_city,Mileage_high,((Mileage_city+Mileage_high)/2) AS avemileage
+                            FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                            JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName AND MODEL.BodyType='Pickup'
+                            ORDER BY avemileage DESC
+                            LIMIT 5"
+                if($result6 = $db->query($puquery)){
+                    while($row6=$result6->fetch_assoc()){
+                        echo "<tr>
+                            <th>".$row6['BrandName']."</th>
+                            <th>".$row6['ModelName']."</th>
+                            <th>".$row6['ModelTrim']."</th>
+                            <th>".$row6['Mileage_city']." mpg</th>
+                            <th>".$row6['Mileage_high']." mpg</th>
+                            <th>".number_format($row6['avemileage'],2)." mpg</th>
+                        </tr>";
+                    }
+                    $result6->free();
+                }
+                ?>
+            </table>
         </div>
         <div>
-            <label>Top 10 most powerful sedans:</label>
+            <label>Top 5 most powerful sedans:</label>
+            <table class="top5">
+                <tr>
+                    <th>Brand</th>
+                    <th>Model Name</th>
+                    <th>Trim</th>
+                    <th>Power</th>
+                    <th>Weight</th>
+                    <th>Power-to-weight ratio</th>
+                </tr>
+                <?php
+                $puquery="SELECT MODEL.ModelName,MAKES.BrandName,FEATURES.ModelTrim,HorsePower,Weightt, HorsePower/Weightt AS Hpp
+                            FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                            JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName AND MODEL.BodyType='Sedan'
+                            ORDER BY Hpp DESC
+                            LIMIT 5"
+                if($result7 = $db->query($puquery)){
+                    while($row7=$result7->fetch_assoc()){
+                        echo "<tr>
+                            <th>".$row7['BrandName']."</th>
+                            <th>".$row7['ModelName']."</th>
+                            <th>".$row7['ModelTrim']."</th>
+                            <th>".$row7['HorsePower']." hp</th>
+                            <th>".$row7['Weightt']." ibs</th>
+                            <th>".$row7['Hpp']." hp/ibs</th>
+                        </tr>";
+                    }
+                    $result7->free();
+                }
+                ?>
+            </table>
         </div>
         <div>
-            <label>Top 5 brands has largest line-up:</label>
+            <label>Top 5 country has most number of vehicles in this library:</label>
+            <?php
+                $puquery="SELECT BRAND.CountryName,COUNT(*)
+                            FROM BRAND
+                            JOIN MAKES ON BRAND.BrandName=MAKES.BrandName
+                            JOIN  MODEL ON MODEL.ModelName=MAKES.ModelName
+                            JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName
+                            GROUP BY BRAND.CountryName
+                            ORDER BY COUNT(*) DESC
+                            LIMIT 5";
+                if($result8 = $db->query($puquery)){
+                    while($row8=$result8->fetch_assoc()){
+                        echo "<tr>
+                            <th>".$row8['BrandName']."</th>
+                            <th>".$row8['ModelName']."</th>
+                            <th>".$row8['ModelTrim']."</th>
+                            <th>".$row8['HorsePower']." hp</th>
+                            <th>".$row8['Weightt']." ibs</th>
+                            <th>".$row8['Hpp']." hp/ibs</th>
+                        </tr>";
+                    }
+                    $result8->free();
+                }
+                ?>
         </div>
 
     </div>
