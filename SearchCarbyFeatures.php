@@ -22,7 +22,7 @@ $GPS = $_POST["GPS"];
 $tempseats = $_POST["tempseats"];
 $sunroof = $_POST["sunroof"];
 
-$query = "  SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileage_high,Mileage_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof 
+$query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,Mileage_high,Mileage_city,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof 
             FROM FEATURES 
             JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
             JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
