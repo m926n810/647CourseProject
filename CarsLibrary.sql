@@ -489,7 +489,7 @@ VALUES ('Cybertruck','Tesla');
 DROP TABLE IF EXISTS MODEL;
 CREATE TABLE IF NOT EXISTS MODEL (
     ModelName varchar(20) NOT NULL,
-    MSRP varchar(6) DEFAULT NULL,
+    MSRP int(6) DEFAULT NULL,
     BodyType varchar(20) DEFAULT NULL,
     SafetyRating varchar(3) DEFAULT NULL,
     PRIMARY KEY (ModelName)
@@ -950,10 +950,10 @@ DROP TABLE IF EXISTS FEATURES;
 CREATE TABLE IF NOT EXISTS FEATURES (
     ModelName varchar(20) NOT NULL,
     ModelTrim varchar(10) NOT NULL,
-    HorsePower varchar(4) DEFAULT NULL,
-    Weightt varchar(6) DEFAULT NULL, 
-    Mileage_city varchar(2)DEFAULT NULL,
-    Mileage_high varchar(2) DEFAULT NULL,
+    HorsePower int(4) DEFAULT NULL,
+    Weightt int(6) DEFAULT NULL, 
+    Mileage_city int(2)DEFAULT NULL,
+    Mileage_high int(2) DEFAULT NULL,
     Blindspotcensor varchar(3) DEFAULT NULL,
     BackupCamera varchar(3) DEFAULT NULL,
     AWD varchar(3) DEFAULT NULL,

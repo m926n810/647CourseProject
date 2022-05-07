@@ -44,7 +44,7 @@ if($brand == '*' || $model == '*'){
                     <td>".$row['ModelName']."</td>
                     <td>$".number_format(intval($row["MSRP"]),2,'.',',')."</td>
                     <td>".$row['BodyType']."</td>
-                    <td>".$row['SafetyRating']."/5</td>
+                    <td>".$row['SafetyRating']." / 5</td>
                     <td>".$row['ModelTrim']."</td>
                     <td>".$row['HorsePower']." hp</td>
                     <td>".$row['Weightt']." ibs</td>
@@ -55,7 +55,7 @@ if($brand == '*' || $model == '*'){
                     <td>".$row['AWD']."</td>
                     <td>".$row['GPS']."</td>
                     <td>".$row['TemperatureSeats']."</td>
-                    <td>".$row['Sunroof']."<td>
+                    <td>".$row['Sunroof']."</td>
                 </tr>";
         }
     }

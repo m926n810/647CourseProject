@@ -67,7 +67,7 @@ echo "
             <th>AWD option</th>
             <th>GPS</th>
             <th>Hot/cold seats</th>
-            <th>Sunroof<th>
+            <th>Sunroof</th>
         </tr>";
 
 if($result = $db->query($query)){
@@ -88,7 +88,7 @@ if($result = $db->query($query)){
                 <td>".$row['AWD']."</td>
                 <td>".$row['GPS']."</td>
                 <td>".$row['TemperatureSeats']."</td>
-                <td>".$row['Sunroof']."<td>
+                <td>".$row['Sunroof']."</td>
             </tr>";
     }
     $result->free();

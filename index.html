@@ -160,14 +160,15 @@
                     <th>AWD option</th>
                     <th>GPS</th>
                     <th>Hot/cold seats</th>
-                    <th>Sunroof<th>
+                    <th>Sunroof</th>
                 </tr>
                 <?php 
                     $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
                     JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
                     JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
                     JOIN EV ON FEATURES.ModelName=EV.ModelName
-                    AND FEATURES.ModelTrim=EV.ModelTrim";
+                    AND FEATURES.ModelTrim=EV.ModelTrim
+                    ORDER BY MAKES.BrandName,FEATURES.ModelName";
 
                     if($result4 = $db->query($evquery)){
                         while($row4=$result4->fetch_assoc()){
@@ -176,7 +177,7 @@
                                     <td>".$row4['ModelName']."</td>
                                     <td>$".number_format(intval($row4['MSRP']),2,'.',',')."</td>
                                     <td>".$row4['BodyType']."</td>
-                                    <td>".$row4['SafetyRating']."/5</td>
+                                    <td>".$row4['SafetyRating']." / 5</td>
                                     <td>".$row4['ModelTrim']."</td>
                                     <td>".$row4['HorsePower']." hp</td>
                                     <td>".$row4['Weightt']." ibs</td>
@@ -186,13 +187,34 @@
                                     <td>".$row4['AWD']."</td>
                                     <td>".$row4['GPS']."</td>
                                     <td>".$row4['TemperatureSeats']."</td>
-                                    <td>".$row4['Sunroof']."<td>
+                                    <td>".$row4['Sunroof']."</td>
                                 </tr>";
                         }
                     }
                 ?>
             </table>
         </div>
+
+        <button type="button" class="tabheader">tops 10: </button>
+        <div>
+            <label>Top 10 most expensive vehicles:</label>
+            <?php 
+            $expquery="SELECT MODEL.ModelName,MAKES.BrandName,MSRP 
+                        FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                        ORDER BY MSRP DESC
+                        LIMIT 10"
+            ?>
+        </div>
+        <div>
+            <label>Top 10 most gas saving trucks:</label>
+        </div>
+        <div>
+            <label>Top 10 most powerful sedans:</label>
+        </div>
+        <div>
+            <label>Top 5 brands has largest line-up:</label>
+        </div>
+
     </div>
     <script language="javascript" type="text/javascript">
         
