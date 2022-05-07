@@ -162,34 +162,36 @@
                     <th>Hot/cold seats</th>
                     <th>Sunroof<th>
                 </tr>
-            <?php 
-                $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
-                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
-                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
-                JOIN EV ON FEATURES.ModelName=EV.ModelName
-                AND FEATURES.ModelTrim=EV.ModelTrim";
+                <?php 
+                    $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
+                    JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
+                    JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                    JOIN EV ON FEATURES.ModelName=EV.ModelName
+                    AND FEATURES.ModelTrim=EV.ModelTrim";
 
-                if($result4 = $db->query($evquery)){
-                    while($row4=$result4->fetch_assoc()){
-                        echo "<tr>
-                                <td>".$row4['BrandName']."</td>
-                                <td>".$row4['ModelName']."</td>
-                                <td>$".number_format(intval($row4["MSRP"]),2,'.',',')."</td>
-                                <td>".$row4['BodyType']."</td>
-                                <td>".$row4['SafetyRating']."/5</td>
-                                <td>".$row4['ModelTrim']."</td>
-                                <td>".$row4['HorsePower']." hp</td>
-                                <td>".$row4['Weightt']." ibs</td>
-                                <td>".$row4['MaxRange']." miles</td>
-                                <td>".$row4['Blindspotcensor']."</td>
-                                <td>".$row4['Backupcamera']."</td>
-                                <td>".$row4['AWD']."</td>
-                                <td>".$row4['GPS']."</td>
-                                <td>".$row4['TemperatureSeats']."</td>
-                                <td>".$row4['Sunroof']."<td>
-                            </tr>";
+                    if($result4 = $db->query($evquery)){
+                        while($row4=$result4->fetch_assoc()){
+                            echo "<tr>
+                                    <td>".$row4['BrandName']."</td>
+                                    <td>".$row4['ModelName']."</td>
+                                    <td>$".number_format(intval($row4['MSRP']),2,'.',',')."</td>
+                                    <td>".$row4['BodyType']."</td>
+                                    <td>".$row4['SafetyRating']."/5</td>
+                                    <td>".$row4['ModelTrim']."</td>
+                                    <td>".$row4['HorsePower']." hp</td>
+                                    <td>".$row4['Weightt']." ibs</td>
+                                    <td>".$row4['MaxRange']." miles</td>
+                                    <td>".$row4['Blindspotcensor']."</td>
+                                    <td>".$row4['Backupcamera']."</td>
+                                    <td>".$row4['AWD']."</td>
+                                    <td>".$row4['GPS']."</td>
+                                    <td>".$row4['TemperatureSeats']."</td>
+                                    <td>".$row4['Sunroof']."<td>
+                                </tr>";
+                        }
                     }
-            ?>
+                ?>
+            </table>
         </div>
     </div>
     <script language="javascript" type="text/javascript">
