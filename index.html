@@ -61,7 +61,8 @@
                     <select name="carTrim" id="selectTrims">
                         <option value='*'>All trims</option>
                     </select>
-                    <input type="submit" value="Search"></input>
+                    <input type="submit" value="Search">
+                    <input type="reset" value="Reset">
                 </form>
             </div>
             <div class="iframe">
@@ -70,71 +71,125 @@
         </div>
 
         <button type="button" class="tabheader">Search a vehicle by features::</button>
-        <div class="iframe">
-            <iframe id="searchresult"></iframe>
-        </div>
         <div class="content SearchCarbyFeatures">
-            <form id="SCBF" method="post" action="SearchCarbyFeatures.php">
-                <label>Body Type:</label>
-                <select name="body">
-                    <option value='*'>All types</option>
-                    <?php if($result2=$db->query("SELECT DISTINCT BodyType FROM MODEL ORDER BY BodyType")) {
-                        while ($row2=$result2->fetch_assoc()){
-                            $body2=$row2['BodyType'];
-                            echo "<option value='$body2'>$body2</option>";
+            <div class="iframe">
+                <iframe id="searchresult"></iframe>
+            </div>
+            <div class="SCBFsearchbox">
+                <form id="SCBF" method="post" action="SearchCarbyFeatures.php">
+                    <label>Body Type:</label>
+                    <select name="body">
+                        <option value='*'>All types</option>
+                        <?php if($result2=$db->query("SELECT DISTINCT BodyType FROM MODEL ORDER BY BodyType")) {
+                            while ($row2=$result2->fetch_assoc()){
+                                $body2=$row2['BodyType'];
+                                echo "<option value='$body2'>$body2</option>";
+                            }
                         }
-                    }
-                    ?>
-                </select><br>
-                <label>Safty Rating:</label>
-                <select name="safe">
-                    <option value='*'>Any</option>
-                    <?php if($result3=$db->query("SELECT DISTINCT SafetyRating FROM MODEL ORDER BY SafetyRating")) {
-                        while ($row3=$result3->fetch_assoc()){
-                            $safe=$row3['SafetyRating'];
-                            echo "<option value='$safe'>$safe</option>";
+                        ?>
+                    </select><br>
+                    <label>Safty Rating:</label>
+                    <select name="safe">
+                        <option value='*'>Any</option>
+                        <?php if($result3=$db->query("SELECT DISTINCT SafetyRating FROM MODEL ORDER BY SafetyRating")) {
+                            while ($row3=$result3->fetch_assoc()){
+                                $safe=$row3['SafetyRating'];
+                                echo "<option value='$safe'>$safe</option>";
+                            }
                         }
-                    }
-                    ?>
-                </select><br>
-                <label>Minimum Price:</label><br>
-                <span class="units">$</span>
-                <input type="textbox" name="minprice" id="minprice"><br>
-                <label>Maximum Price:</label><br>
-                <span class="units">$</span>
-                <input type="textbox" name="maxprice" id="maxprice"><br>
-                <label>Minimum Weight:</label><br>
-                <input type="textbox" name="minweight" id="minweight">
-                <span class="units">ibs</span><br>
-                <label>Maximum Weight:</label><br>
-                <input type="textbox" name="maxweight" id="maxweight">
-                <span class="units">ibs</span><br>
-                <label>Minimum Horsepower:</label><br>
-                <input type="textbox" name="hrsprs">
-                <span class="units">hp</span><br>
-                <label>Minimum Mileage city:</label><br>
-                <input type="textbox" name="gascity">
-                <span class="units">mpg</span><br>
-                <label>Minimum Mileage highway:</label><br>
-                <input type="textbox" name="gashigh">
-                <span class="units">mpg</span><br>
-                
-                <label>Features:</label><br>
-                <input type="checkbox" name="blind" id="blind" value="yes">
-                <label for="blind">Blind spots censors</label><br>
-                <input type="checkbox" name="backup" id="backup" value="yes">
-                <label for="backup">Backup camera</label><br>
-                <input type="checkbox" name="awd" id="awd" value="yes">
-                <label for="awd">All-wheel-drive option available</label><br>
-                <input type="checkbox" name="GPS" id="GPS" value="yes">
-                <label for="GPS">Built-in GPS</label><br>
-                <input type="checkbox" name="tempseats" id="tempseats" value="yes">
-                <label for="tempseats">Warm/cool seat</label><br>
-                <input type="checkbox" name="sunroof" id="sunroof" value="yes">
-                <label for="sunroof">Sunroof</label><br>
+                        ?>
+                    </select><br>
+                    <label>Minimum Price:</label><br>
+                    <span class="units">$</span>
+                    <input type="textbox" name="minprice" id="minprice"><br>
+                    <label>Maximum Price:</label><br>
+                    <span class="units">$</span>
+                    <input type="textbox" name="maxprice" id="maxprice"><br>
+                    <label>Minimum Weight:</label><br>
+                    <input type="textbox" name="minweight" id="minweight">
+                    <span class="units">ibs</span><br>
+                    <label>Maximum Weight:</label><br>
+                    <input type="textbox" name="maxweight" id="maxweight">
+                    <span class="units">ibs</span><br>
+                    <label>Minimum Horsepower:</label><br>
+                    <input type="textbox" name="hrsprs">
+                    <span class="units">hp</span><br>
+                    <label>Minimum Mileage city:</label><br>
+                    <input type="textbox" name="gascity">
+                    <span class="units">mpg</span><br>
+                    <label>Minimum Mileage highway:</label><br>
+                    <input type="textbox" name="gashigh">
+                    <span class="units">mpg</span><br>
+                    
+                    <label>Features:</label><br>
+                    <input type="checkbox" name="blind" id="blind" value="yes">
+                    <label for="blind">Blind spots censors</label><br>
+                    <input type="checkbox" name="backup" id="backup" value="yes">
+                    <label for="backup">Backup camera</label><br>
+                    <input type="checkbox" name="awd" id="awd" value="yes">
+                    <label for="awd">All-wheel-drive option available</label><br>
+                    <input type="checkbox" name="GPS" id="GPS" value="yes">
+                    <label for="GPS">Built-in GPS</label><br>
+                    <input type="checkbox" name="tempseats" id="tempseats" value="yes">
+                    <label for="tempseats">Warm/cool seat</label><br>
+                    <input type="checkbox" name="sunroof" id="sunroof" value="yes">
+                    <label for="sunroof">Sunroof</label><br>
 
-                <button type="button" onclick="SCBFsubmit()">Search</button>
-            </form>
+                    <button type="button" onclick="SCBFsubmit()">Search</button>           
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+
+        <button type="button" class="tabheader">EV list:</button>
+        <div class="content EVlist">
+            <table class="EVresult">
+                <tr>
+                    <th>Brand</th>
+                    <th>Model Name</th>
+                    <th>MSRP</th>
+                    <th>Body type</th>
+                    <th>safety rating</th>
+                    <th>Trim</th>
+                    <th>Horse Power</th>
+                    <th>Weight</th>
+                    <th>Local</th>
+                    <th>Highway</th>
+                    <th>Blind-spot censors</th>
+                    <th>Back-up camera</th>
+                    <th>AWD option</th>
+                    <th>GPS</th>
+                    <th>Hot/cold seats</th>
+                    <th>Sunroof<th>
+                </tr>
+            <?php 
+                $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
+                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                JOIN EV ON FEATURES.ModelName=EV.ModelName
+                AND FEATURES.ModelTrim=EV.ModelTrim";
+
+                if($result4 = $db->query($query)){
+                    while($row4=$result4->fetch_assoc()){
+                        echo "<tr>
+                                <td>".$row4['BrandName']."</td>
+                                <td>".$row4['ModelName']."</td>
+                                <td>$".number_format(intval($row4["MSRP"]),2,'.',',')."</td>
+                                <td>".$row4['BodyType']."</td>
+                                <td>".$row4['SafetyRating']."/5</td>
+                                <td>".$row4['ModelTrim']."</td>
+                                <td>".$row4['HorsePower']." hp</td>
+                                <td>".$row4['Weightt']." ibs</td>
+                                <td>".$row4['MaxRange']." miles</td>
+                                <td>".$row4['Blindspotcensor']."</td>
+                                <td>".$row4['Backupcamera']."</td>
+                                <td>".$row4['AWD']."</td>
+                                <td>".$row4['GPS']."</td>
+                                <td>".$row4['TemperatureSeats']."</td>
+                                <td>".$row4['Sunroof']."<td>
+                            </tr>";
+                    }
+            ?>
         </div>
     </div>
     <script language="javascript" type="text/javascript">
