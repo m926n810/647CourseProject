@@ -33,12 +33,12 @@ if($maxweight!="") $query.= " AND MODEL.Weightt <= $maxweight";
 if($hrsprs!="") $query.= " AND HorsePower >= $hrsprs";
 if($gashigh!="") $query.= " AND Mileage_high >= $gashigh";
 if($gascity!="") $query.= " AND Mileage_city >= $gascity";
-if($blind=="yes") $query.=" AND Blindspotcensor == 'yes'";
-if($backup=="yes") $query.=" AND Backupcamera == 'yes'";
-if($awd=="yes") $query.=" AND AWD == 'yes'";
-if($GPS=="yes") $query.=" AND GPS == 'yes'";
-if($tempseats=="yes") $query.=" AND TemperatureSeats == 'yes'";
-if($sunroof=="yes") $query.=" AND Sunroof == 'yes'";
+if($blind=="yes") $query.=" AND Blindspotcensor = 'yes'";
+if($backup=="yes") $query.=" AND Backupcamera = 'yes'";
+if($awd=="yes") $query.=" AND AWD = 'yes'";
+if($GPS=="yes") $query.=" AND GPS = 'yes'";
+if($tempseats=="yes") $query.=" AND TemperatureSeats = 'yes'";
+if($sunroof=="yes") $query.=" AND Sunroof = 'yes'";
 
 echo $query;
 echo "
