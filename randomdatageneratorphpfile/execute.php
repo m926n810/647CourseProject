@@ -8,8 +8,8 @@
         <th>ModelName</th>
         <th>ModelTrim</th>
         <th>HorsePower</th>
-        <th>Mileleague_city</th>
-        <th>Mileleague_high</th>
+        <th>Mileage_city</th>
+        <th>Mileage_high</th>
         <th>Blindspotcensor</th>
         <th>BackupCamera</th>
         <th>AWD</th>
@@ -40,8 +40,8 @@
                 $updatequery = "UPDATE FEATURES
                                 SET HorsePower = '$hrsprs',
                                     Weightt = '$weight',
-                                    Mileleague_city = '$milecity',
-                                    Mileleague_high = '$milehigh',
+                                    Mileage_city = '$milecity',
+                                    Mileage_high = '$milehigh',
                                     Blindspotcensor = '$blind',
                                     BackupCamera = '$backupcam',
                                     AWD = '$awd',
@@ -54,8 +54,8 @@
                     <td>'.$row['ModelName'].'</td>
                     <td>'.$row['ModelTrim'].'</td>
                     <td>'.$row['HorsePower'].'</td>
-                    <td>'.$row['Mileleague_city'].'</td>
-                    <td>'.$row['Mileleague_high'].'</td>
+                    <td>'.$row['Mileage_city'].'</td>
+                    <td>'.$row['Mileage_high'].'</td>
                     <td>'.$row['Blindspotcensor'].'</td>
                     <td>'.$row['BackupCamera'].'</td>
                     <td>'.$row['AWD'].'</td>
