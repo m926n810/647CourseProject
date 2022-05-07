@@ -154,11 +154,11 @@
             console.log(maxweight);
             console.log(minprice);
             console.log(maxprice);
-            if(minweight>maxweight && minweight!="" && maxweight!=""){
+            if(parseInt(minweight)>parseInt(maxweight) && minweight!="" && maxweight!=""){
                 alert("Minimum weight cannot be larger than Maximum weight!");
                 return;
             } 
-            if(minprice>maxprice&& minprice!="" && maxprice!=""){
+            if(parseInt(minprice)>parseInt(maxprice) && minprice!="" && maxprice!=""){
                 alert("Minimum price cannot be larger than Maximum price!");
                 return;
             }
