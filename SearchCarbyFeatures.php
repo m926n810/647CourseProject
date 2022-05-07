@@ -7,6 +7,9 @@ $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
 if ($db->connect_error){ 
     die("Connection failed: ".$db->connect_error);
 }
+$body = $_POST["body"];
+$safe = $_POST["safe"];
+
 $minprice = $_POST["minprice"];
 $maxprice = $_POST["maxprice"];
 $minweight = $_POST["minweight"];
@@ -26,6 +29,8 @@ $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePowe
             FROM FEATURES 
             JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
             JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
+if($body!='*') $query.=" AND BodyType = '$body'";
+if($safe!='*') $query.=" AND BodyType = '$safe'";
 if($minprice!="") $query.= " AND MODEL.MSRP >= $minprice";
 if($maxprice!="") $query.= " AND MODEL.MSRP <= $maxrice";
 if($minweight!="") $query.= " AND MODEL.Weightt >= $minweight";

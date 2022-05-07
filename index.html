@@ -75,6 +75,28 @@
         </div>
         <div class="content SearchCarbyFeatures">
             <form id="SCBF" method="post" action="SearchCarbyFeatures.php">
+                <label>Body Type:</label>
+                <select name="body">
+                    <option value='*'>All types</option>
+                    <?php if($result2=$db->query("SELECT DISTINCT BodyType FROM MODEL")) {
+                        while ($row2=$result2->fetch_assoc()){
+                            $body2=$row2['BodyType'];
+                            echo "<option value='$body2'>$body2</option>";
+                        }
+                    }
+                    ?>
+                </select>
+                <label>Safty Rating:</label>
+                <select name="safe">
+                    <option value='*'>Any</option>
+                    <?php if($result3=$db->query("SELECT DISTINCT SafetyRating FROM MODEL")) {
+                        while ($row3=$result3->fetch_assoc()){
+                            $safe=$row3['SafetyRating'];
+                            echo "<option value='$safe'>$safe</option>";
+                        }
+                    }
+                    ?>
+                </select>
                 <label>Minimum Price:</label><br>
                 <span class="units">$</span>
                 <input type="textbox" name="minprice" id="minprice"><br>
