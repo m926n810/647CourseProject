@@ -39,9 +39,7 @@
 
         <button type="button" class="tabheader">Search information of a vehicle:</div>
         <div class="content SearchFeatureByCarName">
-            <div class="iframe">
-                <iframe id="searchresult"></iframe>
-            </div>
+            
             <div class="searchbox">
                 <form action="SearchInfo.php" method="post">
                     <label>Select brand:</label>
@@ -66,27 +64,54 @@
                     <input type="submit" value="Search"></input>
                 </form>
             </div>
+            <div class="iframe">
+                <iframe id="searchresult"></iframe>
+            </div>
         </div>
 
-
-
-        <button type="button" class="tabheader"></button>
+        <button type="button" class="tabheader">Search a vehicle by features::</button>
+        <div class="iframe">
+            <iframe id="searchresult"></iframe>
+        </div>
         <div class="content SearchCarbyFeatures">
-            <form>
-                <label>Minimum Price</label>
-                <input type="range">
-                <label>Maximum Price</label>
-                <input type="textbox">
-                <label>Minimum Weight</label>
-                <input type="textbox">
-                <label>Maximum Weight</label>
-                <input type="textbox">
-                <label>Minimum Horsepower</label>
-                <input type="textbox">
-                <label>Minimum Mileage city</label>
-                <input type="textbox">
-                <label>Minimum Mileage highway</label>
-                <input type="textbox">
+            <form id="SCBF" method="post" action="SearchCarbyFeatures.php">
+                <label>Minimum Price:</label><br>
+                <span class="units">$</span>
+                <input type="textbox" name="minprice" id="minprice"><br>
+                <label>Maximum Price:</label><br>
+                <span class="units">$</span>
+                <input type="textbox" name="maxprice" id="maxprice"><br>
+                <label>Minimum Weight:</label><br>
+                <input type="textbox" name="minweight" id="minweight">
+                <span class="units">ibs</span><br>
+                <label>Maximum Weight:</label><br>
+                <input type="textbox" name="maxweight" id="maxweight">
+                <span class="units">ibs</span><br>
+                <label>Minimum Horsepower:</label><br>
+                <input type="textbox" name="hrsprs">
+                <span class="units">hp</span><br>
+                <label>Minimum Mileage city:</label><br>
+                <input type="textbox" name="gascity">
+                <span class="units">mpg</span><br>
+                <label>Minimum Mileage highway:</label><br>
+                <input type="textbox" name="gashigh">
+                <span class="units">mpg</span><br>
+                
+                <label>Features:</label><br>
+                <input type="checkbox" name="blind" id="blind" value="yes">
+                <label for="blind">Blind spots censors</label><br>
+                <input type="checkbox" name="backup" id="backup" value="yes">
+                <label for="backup">Backup camera</label><br>
+                <input type="checkbox" name="awd" id="awd" value="yes">
+                <label for="awd">All-wheel-drive option available</label><br>
+                <input type="checkbox" name="GPS" id="GPS" value="yes">
+                <label for="GPS">Built-in GPS</label><br>
+                <input type="checkbox" name="tempseats" id="tempseats" value="yes">
+                <label for="tempseats">Warm/cool seat</label><br>
+                <input type="checkbox" name="sunroof" id="sunroof" value="yes">
+                <label for="sunroof">Sunroof</label><br>
+
+                <button type="button" onclick="SCBFsubmit()">Search</button>
             </form>
         </div>
     </div>
@@ -119,7 +144,26 @@
                 }
             }
         }
+
+        function SCBFsubmit(){
+            minweight=document.getElementById("minweight").value;
+            maxweight=document.getElementById("maxweight").value;
+            minprice=document.getElementById("minprice").value;
+            maxprice=document.getElementById("maxprice").value;
+            if(minweight>maxweight){
+                alert("Minimum weight cannot be larger than Maximum weight!");
+                return;
+            } 
+            if(minprice>maxprice){
+                alert("Minimum price cannot be larger than Maximum price!");
+                return;
+            }
+            document.getElementById("SCBF").submit();
+        }
+
+        
     </script>
+
     <?php $db->close();?>
 </body>
 </html>
