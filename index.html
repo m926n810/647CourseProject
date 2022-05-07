@@ -78,25 +78,25 @@
                 <label>Body Type:</label>
                 <select name="body">
                     <option value='*'>All types</option>
-                    <?php if($result2=$db->query("SELECT DISTINCT BodyType FROM MODEL")) {
+                    <?php if($result2=$db->query("SELECT DISTINCT BodyType FROM MODEL ORDER BY BodyType")) {
                         while ($row2=$result2->fetch_assoc()){
                             $body2=$row2['BodyType'];
                             echo "<option value='$body2'>$body2</option>";
                         }
                     }
                     ?>
-                </select>
+                </select><br>
                 <label>Safty Rating:</label>
                 <select name="safe">
                     <option value='*'>Any</option>
-                    <?php if($result3=$db->query("SELECT DISTINCT SafetyRating FROM MODEL")) {
+                    <?php if($result3=$db->query("SELECT DISTINCT SafetyRating FROM MODEL ORDER BY SafetyRating")) {
                         while ($row3=$result3->fetch_assoc()){
                             $safe=$row3['SafetyRating'];
                             echo "<option value='$safe'>$safe</option>";
                         }
                     }
                     ?>
-                </select>
+                </select><br>
                 <label>Minimum Price:</label><br>
                 <span class="units">$</span>
                 <input type="textbox" name="minprice" id="minprice"><br>

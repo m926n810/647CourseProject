@@ -606,7 +606,7 @@ VALUES ('CX-5','25900','Compact SUV','5');
 INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
 VALUES ('CX-9','35280','SUV','5');
 INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
-VALUES ('MX-30','33740','Coupact SUV','5');
+VALUES ('MX-30','33740','Compact SUV','5');
 INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
 VALUES ('Miata','27300','Sport Coupe','n/a');
 INSERT INTO MODEL (ModelName, MSRP, BodyType, SafetyRating) 
