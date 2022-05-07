@@ -150,11 +150,15 @@
             maxweight=document.getElementById("maxweight").value;
             minprice=document.getElementById("minprice").value;
             maxprice=document.getElementById("maxprice").value;
-            if(minweight>maxweight){
+            console.log(minweight);
+            console.log(maxweight);
+            console.log(minprice);
+            console.log(maxprice);
+            if(minweight>maxweight && minweight!="" && maxweight!=""){
                 alert("Minimum weight cannot be larger than Maximum weight!");
                 return;
             } 
-            if(minprice>maxprice){
+            if(minprice>maxprice&& minprice!="" && maxprice!=""){
                 alert("Minimum price cannot be larger than Maximum price!");
                 return;
             }
