@@ -169,7 +169,7 @@
                 JOIN EV ON FEATURES.ModelName=EV.ModelName
                 AND FEATURES.ModelTrim=EV.ModelTrim";
 
-                if($result4 = $db->query($query)){
+                if($result4 = $db->query($evquery)){
                     while($row4=$result4->fetch_assoc()){
                         echo "<tr>
                                 <td>".$row4['BrandName']."</td>
