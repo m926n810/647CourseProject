@@ -30,7 +30,10 @@ $query = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePowe
             JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
             JOIN MAKES ON MODEL.ModelName=MAKES.ModelName";
 if($body!='*') $query.=" AND BodyType = '$body'";
-if($safe!='*') $query.=" AND BodyType = '$safe'";
+if($safe!='*') {
+    if($safe=='n/a') $query.=" AND BodyType = 'n/a'";
+    else $query.=" AND BodyType = $safe";
+}
 if($minprice!="") $query.= " AND MODEL.MSRP >= $minprice";
 if($maxprice!="") $query.= " AND MODEL.MSRP <= $maxrice";
 if($minweight!="") $query.= " AND MODEL.Weightt >= $minweight";
