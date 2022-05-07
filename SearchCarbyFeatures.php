@@ -35,9 +35,9 @@ if($safe!='*') {
     else $query.=" AND SafetyRating = $safe";
 }
 if($minprice!="") $query.= " AND MODEL.MSRP >= $minprice";
-if($maxprice!="") $query.= " AND MODEL.MSRP <= $maxrice";
-if($minweight!="") $query.= " AND MODEL.Weightt >= $minweight";
-if($maxweight!="") $query.= " AND MODEL.Weightt <= $maxweight";
+if($maxprice!="") $query.= " AND MODEL.MSRP <= $maxprice";
+if($minweight!="") $query.= " AND Weightt >= $minweight";
+if($maxweight!="") $query.= " AND Weightt <= $maxweight";
 if($hrsprs!="") $query.= " AND HorsePower >= $hrsprs";
 if($gashigh!="") $query.= " AND Mileage_high >= $gashigh";
 if($gascity!="") $query.= " AND Mileage_city >= $gascity";
@@ -47,7 +47,7 @@ if($awd=="yes") $query.=" AND AWD = 'yes'";
 if($GPS=="yes") $query.=" AND GPS = 'yes'";
 if($tempseats=="yes") $query.=" AND TemperatureSeats = 'yes'";
 if($sunroof=="yes") $query.=" AND Sunroof = 'yes'";
-
+$query .=" ORDER BY MAKES.BrandName,FEATURES.ModelName";
 echo $query;
 echo "
     <table>
@@ -77,7 +77,7 @@ if($result = $db->query($query)){
                 <td>".$row['ModelName']."</td>
                 <td>$".number_format(intval($row["MSRP"]),2,'.',',')."</td>
                 <td>".$row['BodyType']."</td>
-                <td>".$row['SafetyRating']."/5</td>
+                <td>".$row['SafetyRating']." / 5</td>
                 <td>".$row['ModelTrim']."</td>
                 <td>".$row['HorsePower']." hp</td>
                 <td>".$row['Weightt']." ibs</td>
