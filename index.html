@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2022 Vehicles Library</title>
     <script script="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg"></div>
     <?php
         $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
         if ($db->connect_error){ 
@@ -33,15 +35,13 @@
         }
     ?>
     <div class="top">
-        <h1>2022 Cars library</h1>
+        <span style="margin-left:2%"> 2022 Vehicles Library</span>
     </div>
     <div class="center">
-
-        <button type="button" class="tabheader">Search information of a vehicle:</div>
-        <div class="content SearchFeatureByCarName">
-            
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Search information of a vehicle:</button>
+        <div class="content hidden SearchFeatureByCarName">
             <div class="searchbox">
-                <form action="SearchInfo.php" method="post">
+                <center><form action="SearchInfo.php" method="post" target="sf_iframe">
                     <label>Select brand:</label>
                     <select name="carBrand" id="selectBrands" onchange="javascript: dropdownbrand(this.options[this.selectedIndex].value); document.getElementById('selectTrims').length=1;">
                         <option value='*'>All brands</option>
@@ -63,20 +63,17 @@
                     </select>
                     <input type="submit" value="Search">
                     <input type="reset" value="Reset">
-                </form>
+                </form></center>
             </div>
-            <div class="iframe">
-                <iframe id="searchresult"></iframe>
+            <div class="iframe sf_iframe">
+                <iframe name="sf_iframe"></iframe>
             </div>
         </div>
 
-        <button type="button" class="tabheader">Search a vehicle by features::</button>
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Search a vehicle by features::</button>
         <div class="content SearchCarbyFeatures">
-            <div class="iframe">
-                <iframe id="searchresult"></iframe>
-            </div>
             <div class="SCBFsearchbox">
-                <form id="SCBF" method="post" action="SearchCarbyFeatures.php">
+                <form id="SCBF" method="post" action="SearchCarbyFeatures.php" target="SCBF_iframe">
                     <label>Body Type:</label>
                     <select name="body">
                         <option value='*'>All types</option>
@@ -129,7 +126,7 @@
                     <input type="checkbox" name="backup" id="backup" value="yes">
                     <label for="backup">Backup camera</label><br>
                     <input type="checkbox" name="awd" id="awd" value="yes">
-                    <label for="awd">All-wheel-drive option available</label><br>
+                    <label for="awd">All-wheel-drive option</label><br>
                     <input type="checkbox" name="GPS" id="GPS" value="yes">
                     <label for="GPS">Built-in GPS</label><br>
                     <input type="checkbox" name="tempseats" id="tempseats" value="yes">
@@ -141,64 +138,13 @@
                     <input type="reset" value="Reset">
                 </form>
             </div>
+            <div class="iframe SCBF_iframe">
+                <iframe name="SCBF_iframe"></iframe>
+            </div>
         </div>
 
-        <button type="button" class="tabheader">EV list:</button>
-        <div class="content EVlist">
-            <table class="EVresult">
-                <tr>
-                    <th>Brand</th>
-                    <th>Model Name</th>
-                    <th>MSRP</th>
-                    <th>Body type</th>
-                    <th>safety rating</th>
-                    <th>Trim</th>
-                    <th>Horse Power</th>
-                    <th>Weight</th>
-                    <th>Local</th>
-                    <th>Highway</th>
-                    <th>Blind-spot censors</th>
-                    <th>Back-up camera</th>
-                    <th>AWD option</th>
-                    <th>GPS</th>
-                    <th>Hot/cold seats</th>
-                    <th>Sunroof</th>
-                </tr>
-                <?php 
-                    $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
-                    JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
-                    JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
-                    JOIN EV ON FEATURES.ModelName=EV.ModelName
-                    AND FEATURES.ModelTrim=EV.ModelTrim
-                    ORDER BY MAKES.BrandName,FEATURES.ModelName";
-
-                    if($result4 = $db->query($evquery)){
-                        while($row4=$result4->fetch_assoc()){
-                            echo "<tr>
-                                    <td>".$row4['BrandName']."</td>
-                                    <td>".$row4['ModelName']."</td>
-                                    <td>$".number_format($row4['MSRP'],2,'.',',')."</td>
-                                    <td>".$row4['BodyType']."</td>
-                                    <td>".$row4['SafetyRating']." / 5</td>
-                                    <td>".$row4['ModelTrim']."</td>
-                                    <td>".$row4['HorsePower']." hp</td>
-                                    <td>".$row4['Weightt']." ibs</td>
-                                    <td>".$row4['MaxRange']." miles</td>
-                                    <td>".$row4['Blindspotcensor']."</td>
-                                    <td>".$row4['Backupcamera']."</td>
-                                    <td>".$row4['AWD']."</td>
-                                    <td>".$row4['GPS']."</td>
-                                    <td>".$row4['TemperatureSeats']."</td>
-                                    <td>".$row4['Sunroof']."</td>
-                                </tr>";
-                        }
-                        $result4->free();
-                    }
-                ?>
-            </table>
-        </div>
-
-        <button type="button" class="tabheader">tops 5: </button>
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Tops 5: </button>
+        <div class="content hidden">
         <div>
             <label>Top 5 most expensive vehicles:</label>
             <?php 
@@ -300,20 +246,77 @@
                 if($result8 = $db->query($puquery)){
                     while($row8=$result8->fetch_assoc()){
                         echo "<tr>
-                            <td>".$row8['Country']."</td>
+                            <td>".$row8['CountryName']."</td>
                             <td>".$row8['COUNT(*)']."</td>
                         </tr>";
                     }
                     $result8->free();
                 }
                 ?>
-       </table> </div>
+       </table></div>
+    </div>
+    
+    <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">EV list:</button>
+    <div class="content hidden EVlist">
+        <table class="EVresult">
+            <tr>
+                <th>Brand</th>
+                <th>Model Name</th>
+                <th>MSRP</th>
+                <th>Body type</th>
+                <th>safety rating</th>
+                <th>Trim</th>
+                <th>Horse Power</th>
+                <th>Weight</th>
+                <th>Local</th>
+                <th>Highway</th>
+                <th>Blind-spot censors</th>
+                <th>Back-up camera</th>
+                <th>AWD option</th>
+                <th>GPS</th>
+                <th>Hot/cold seats</th>
+                <th>Sunroof</th>
+            </tr>
+            <?php 
+                $evquery = "SELECT MAKES.BrandName,FEATURES.ModelName,FEATURES.ModelTrim,HorsePower,Weightt,MaxRange,Blindspotcensor,Backupcamera,AWD,GPS,MSRP,BodyType,SafetyRating,TemperatureSeats,Sunroof FROM FEATURES 
+                JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName
+                JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
+                JOIN EV ON FEATURES.ModelName=EV.ModelName
+                AND FEATURES.ModelTrim=EV.ModelTrim
+                ORDER BY MAKES.BrandName,FEATURES.ModelName";
+
+                if($result4 = $db->query($evquery)){
+                    while($row4=$result4->fetch_assoc()){
+                        echo "<tr>
+                                <td>".$row4['BrandName']."</td>
+                                <td>".$row4['ModelName']."</td>
+                                <td>$".number_format($row4['MSRP'],2,'.',',')."</td>
+                                <td>".$row4['BodyType']."</td>
+                                <td>".$row4['SafetyRating']." / 5</td>
+                                <td>".$row4['ModelTrim']."</td>
+                                <td>".$row4['HorsePower']." hp</td>
+                                <td>".$row4['Weightt']." ibs</td>
+                                <td>".$row4['MaxRange']." miles</td>
+                                <td>".$row4['Blindspotcensor']."</td>
+                                <td>".$row4['Backupcamera']."</td>
+                                <td>".$row4['AWD']."</td>
+                                <td>".$row4['GPS']."</td>
+                                <td>".$row4['TemperatureSeats']."</td>
+                                <td>".$row4['Sunroof']."</td>
+                            </tr>";
+                    }
+                    $result4->free();
+                }
+            ?>
+        </table>
+    </div>
 
     </div>
+</div>
     <script language="javascript" type="text/javascript">
         
         function dropdownbrand(brand){
-            var getModelsfromPhp = <?php echo json_encode($getmodelsforJS); ?>;
+            var getModelsfromPhp = //<?php echo json_encode($getmodelsforJS); ?>;
             document.getElementById("selectModels").length=1;
             if(brand){
                 let j=1;
@@ -327,7 +330,7 @@
         }
 
         function dropdownmodel(model){
-            var gettrimsfromPhp = <?php echo json_encode($gettrimsforJS); ?>;
+            var gettrimsfromPhp = //<?php echo json_encode($gettrimsforJS); ?>;
             document.getElementById("selectTrims").length=1;
             if(model){
                 let j=1;
@@ -360,7 +363,13 @@
             document.getElementById("SCBF").submit();
         }
 
-        
+        function hideandshow(what){
+            if(what.classList.contains("hidden")){
+                what.classList.remove("hidden");
+            }else{
+                what.classList.add("hidden");
+            }
+        }
     </script>
 
     <?php $db->close();?>
