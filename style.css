@@ -124,3 +124,9 @@ th,td{
 .top5tables{
     margin: 10px;
 }
+input[type="number"]{
+    border:none;
+    font-family:Garamond, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
