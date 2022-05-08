@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Search a vehicle by features::</button>
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Search a vehicle by features:</button>
         <div class="content hidden SearchCarbyFeatures">
             <div class="SCBFsearchbox">
                 <form id="SCBF" method="post" action="SearchCarbyFeatures.php" target="SCBF_iframe">
@@ -100,24 +100,24 @@
                     </select><br>
                     <label>Minimum Price:</label><br>
                     <span class="units">$</span>
-                    <input type="textbox" name="minprice" id="minprice"><br>
+                    <input type="number" min="0" name="minprice" id="minprice"><br>
                     <label>Maximum Price:</label><br>
                     <span class="units">$</span>
-                    <input type="textbox" name="maxprice" id="maxprice"><br>
+                    <input type="number" min="0" name="maxprice" id="maxprice"><br>
                     <label>Minimum Weight:</label><br>
-                    <input type="textbox" name="minweight" id="minweight">
+                    <input type="number" min="0" name="minweight" id="minweight">
                     <span class="units">ibs</span><br>
                     <label>Maximum Weight:</label><br>
-                    <input type="textbox" name="maxweight" id="maxweight">
+                    <input type="number" min="0" name="maxweight" id="maxweight">
                     <span class="units">ibs</span><br>
                     <label>Minimum Horsepower:</label><br>
-                    <input type="textbox" name="hrsprs">
+                    <input type="number" min="0" name="hrsprs">
                     <span class="units">hp</span><br>
                     <label>Minimum Mileage city:</label><br>
-                    <input type="textbox" name="gascity">
+                    <input type="number" min="0" name="gascity">
                     <span class="units">mpg</span><br>
                     <label>Minimum Mileage highway:</label><br>
-                    <input type="textbox" name="gashigh">
+                    <input type="number" min="0" name="gashigh">
                     <span class="units">mpg</span><br>
                     
                     <label>Features:</label><br>
@@ -143,7 +143,7 @@
             </div>
         </div>
 
-        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Tops 5 in this library: </button>
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Top 5's in this library: </button>
         <div class="content hidden top5">
         <div class="twotop5">
             <div>
