@@ -205,7 +205,7 @@
             $expquery="SELECT MODEL.ModelName,MAKES.BrandName,MSRP 
                         FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
                         ORDER BY MSRP DESC
-                        LIMIT 5"
+                        LIMIT 5";
             if($result5 = $db->query($expquery)){
                 $count=1;
                 while($row5=$result5->fetch_assoc()){
@@ -232,16 +232,16 @@
                             FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
                             JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName AND MODEL.BodyType='Pickup'
                             ORDER BY avemileage DESC
-                            LIMIT 5"
+                            LIMIT 5";
                 if($result6 = $db->query($puquery)){
                     while($row6=$result6->fetch_assoc()){
                         echo "<tr>
-                            <th>".$row6['BrandName']."</th>
-                            <th>".$row6['ModelName']."</th>
-                            <th>".$row6['ModelTrim']."</th>
-                            <th>".$row6['Mileage_city']." mpg</th>
-                            <th>".$row6['Mileage_high']." mpg</th>
-                            <th>".number_format($row6['avemileage'],2)." mpg</th>
+                            <td>".$row6['BrandName']."</td>
+                            <td>".$row6['ModelName']."</td>
+                            <td>".$row6['ModelTrim']."</td>
+                            <td>".$row6['Mileage_city']." mpg</td>
+                            <td>".$row6['Mileage_high']." mpg</td>
+                            <td>".number_format($row6['avemileage'],2)." mpg</td>
                         </tr>";
                     }
                     $result6->free();
@@ -265,16 +265,16 @@
                             FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
                             JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName AND MODEL.BodyType='Sedan'
                             ORDER BY Hpp DESC
-                            LIMIT 5"
+                            LIMIT 5";
                 if($result7 = $db->query($puquery)){
                     while($row7=$result7->fetch_assoc()){
                         echo "<tr>
-                            <th>".$row7['BrandName']."</th>
-                            <th>".$row7['ModelName']."</th>
-                            <th>".$row7['ModelTrim']."</th>
-                            <th>".$row7['HorsePower']." hp</th>
-                            <th>".$row7['Weightt']." ibs</th>
-                            <th>".$row7['Hpp']." hp/ibs</th>
+                            <td>".$row7['BrandName']."</td>
+                            <td>".$row7['ModelName']."</td>
+                            <td>".$row7['ModelTrim']."</td>
+                            <td>".$row7['HorsePower']." hp</td>
+                            <td>".$row7['Weightt']." ibs</td>
+                            <td>".$row7['Hpp']." hp/ibs</td>
                         </tr>";
                     }
                     $result7->free();
@@ -284,6 +284,10 @@
         </div>
         <div>
             <label>Top 5 country has most number of vehicles in this library:</label>
+            <table class="top5"><tr>
+                <th>Country</th>
+                <th>Number of vehicles</th>
+            </tr>
             <?php
                 $puquery="SELECT BRAND.CountryName,COUNT(*)
                             FROM BRAND
@@ -296,18 +300,14 @@
                 if($result8 = $db->query($puquery)){
                     while($row8=$result8->fetch_assoc()){
                         echo "<tr>
-                            <th>".$row8['BrandName']."</th>
-                            <th>".$row8['ModelName']."</th>
-                            <th>".$row8['ModelTrim']."</th>
-                            <th>".$row8['HorsePower']." hp</th>
-                            <th>".$row8['Weightt']." ibs</th>
-                            <th>".$row8['Hpp']." hp/ibs</th>
+                            <td>".$row8['Country']."</td>
+                            <td>".$row8['COUNT(*)']."</td>
                         </tr>";
                     }
                     $result8->free();
                 }
                 ?>
-        </div>
+       </table> </div>
 
     </div>
     <script language="javascript" type="text/javascript">
