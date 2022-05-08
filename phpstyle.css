@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow: scroll;
     font-family:Garamond, serif;
     font-size: 19px;
 }
