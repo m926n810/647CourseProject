@@ -1,6 +1,6 @@
 <?php 
 echo "<head>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='phpstyle.css'>
 </head>
 <body>";
 $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
@@ -48,7 +48,6 @@ if($GPS=="yes") $query.=" AND GPS = 'yes'";
 if($tempseats=="yes") $query.=" AND TemperatureSeats = 'yes'";
 if($sunroof=="yes") $query.=" AND Sunroof = 'yes'";
 $query .=" ORDER BY MAKES.BrandName,FEATURES.ModelName";
-echo $query;
 echo "
     <table>
         <tr>
@@ -56,7 +55,7 @@ echo "
             <th>Model Name</th>
             <th>MSRP</th>
             <th>Body type</th>
-            <th>safety rating</th>
+            <th>Safety rating</th>
             <th>Trim</th>
             <th>Horse Power</th>
             <th>Weight</th>

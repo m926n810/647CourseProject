@@ -1,6 +1,6 @@
 <?php 
 echo "<head>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='phpstyle.css'>
 </head>
 <body>";
 $db = new mysqli("mysql.eecs.ku.edu","m926n810","Yi7saine","m926n810");
@@ -18,7 +18,7 @@ if($brand == '*' || $model == '*'){
             <th>Model Name</th>
             <th>MSRP</th>
             <th>Body type</th>
-            <th>safety rating</th>
+            <th>Safety rating</th>
             <th>Trim</th>
             <th>Horse Power</th>
             <th>Weight</th>
@@ -66,8 +66,7 @@ if($brand == '*' || $model == '*'){
                 JOIN MODEL ON MODEL.ModelName=FEATURES.ModelName AND MODEL.ModelName='$model'
                 JOIN MAKES ON MODEL.ModelName=MAKES.ModelName AND MAKES.BrandName='$brand'";
     if($trim!='*'){ $queryelse=$queryelse." AND FEATURES.ModelTrim='$trim';";}
-    
-    echo "<br>".$queryelse;
+
     if($resultelse = $db->query($queryelse)){
         while($rowelse = $resultelse->fetch_assoc()){
             echo '<div class="carinfobox">

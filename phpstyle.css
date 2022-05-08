@@ -1,0 +1,22 @@
+body{
+    overflow: hidden;
+    font-family:Garamond, serif;
+    font-size: 19px;
+    display:flex;
+    justify-content: center;
+}
+th{
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carinfobox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.featurebox{
+    width: 80%;
+    display:flex;
+    justify-content: space-around;
+}
