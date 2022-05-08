@@ -143,12 +143,12 @@
             </div>
         </div>
 
-        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Tops 5: </button>
+        <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Tops 5 in this library: </button>
         <div class="content hidden">
         <div class="twotop5">
             <div>
             <label class="top5labels">Top 5 most expensive vehicles:</label>
-            <table><tr>
+            <table class="top5tables"><tr>
                 <th>No.</th>
                 <th>Brand</th>
                 <th>Model</th>
@@ -166,7 +166,7 @@
                         <th>$count</th>
                         <th>".$row5["BrandName"]."</th>
                         <th>".$row5["ModelName"]."</th>
-                        <td>".$row5["MSRP"]."</td></tr>";
+                        <td>".number_format($row5["MSRP"],2,'.',',')."</td></tr>";
 
                     $count++;
                 }
@@ -176,8 +176,8 @@
         </table>
     </div>
         <div>
-            <label class="top5labels">Top 5 country has most number of vehicles in this library:</label>
-            <table><tr>
+            <label class="top5labels">Top 5 countries have the most number of vehicles:</label>
+            <table class="top5tables"><tr>
                 <th>Country</th>
                 <th>Number of vehicles</th>
             </tr>
@@ -193,7 +193,7 @@
                 if($result8 = $db->query($puquery)){
                     while($row8=$result8->fetch_assoc()){
                         echo "<tr>
-                            <td>".$row8['CountryName']."</td>
+                            <th>".$row8['CountryName']."</th>
                             <td>".$row8['COUNT(*)']."</td>
                         </tr>";
                     }
@@ -204,8 +204,8 @@
        </div>
        <div class="twotop5">
         <div>
-            <label class="top5labels">Top 5 most gas saving trucks:</label>
-            <table>
+            <label class="top5labels">Top 5 best gas saving pick-up trucks:</label>
+            <table class="top5tables">
                 <tr>
                     <th>Brand</th>
                     <th>Model Name</th>
@@ -223,9 +223,9 @@
                 if($result6 = $db->query($puquery)){
                     while($row6=$result6->fetch_assoc()){
                         echo "<tr>
-                            <td>".$row6['BrandName']."</td>
-                            <td>".$row6['ModelName']."</td>
-                            <td>".$row6['ModelTrim']."</td>
+                            <th>".$row6['BrandName']."</th>
+                            <th>".$row6['ModelName']."</th>
+                            <th>".$row6['ModelTrim']."</th>
                             <td>".$row6['Mileage_city']." mpg</td>
                             <td>".$row6['Mileage_high']." mpg</td>
                             <td>".number_format($row6['avemileage'],2)." mpg</td>
@@ -238,7 +238,7 @@
         </div>
         <div>
             <label class="top5labels">Top 5 most powerful sedans:</label>
-            <table>
+            <table class="top5tables">
                 <tr>
                     <th>Brand</th>
                     <th>Model Name</th>
@@ -256,9 +256,9 @@
                 if($result7 = $db->query($puquery)){
                     while($row7=$result7->fetch_assoc()){
                         echo "<tr>
-                            <td>".$row7['BrandName']."</td>
-                            <td>".$row7['ModelName']."</td>
-                            <td>".$row7['ModelTrim']."</td>
+                            <th>".$row7['BrandName']."</th>
+                            <th>".$row7['ModelName']."</th>
+                            <th>".$row7['ModelTrim']."</th>
                             <td>".$row7['HorsePower']." hp</td>
                             <td>".$row7['Weightt']." ibs</td>
                             <td>".$row7['Hpp']." hp/ibs</td>

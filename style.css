@@ -7,6 +7,7 @@ body{
     align-items: center;
     flex-direction: column;
     font-family:Garamond, serif;
+    color:#000538;
 }
 .top{
     font-size: 60px;
@@ -30,6 +31,7 @@ body{
     font-family:Garamond, serif;
     border: none;
     background-color: rgba(253, 212, 62, 0.614);
+    color:#954308;
 }
 .tabheader:hover{
     background-color: rgba(255, 202, 42, 0.956);
@@ -107,6 +109,24 @@ th,td{
     cursor:default;
 }
 .twotop5{
+    margin-top:20px;
+    margin-bottom:20px;
     display: flex;
     justify-content: space-around;
+}
+.top5labels{
+    font-size:30px;
+    background-color:rgb(190 244 254 / 82%);
+    color:#954308;
+    padding-left:10px;
+    padding-right:10px;
+}
+.EVlist{
+    overflow: scroll;
+}
+.EVresult{
+    width: 100%;
+}
+.top5tables{
+    margin-left: 10px;
 }
