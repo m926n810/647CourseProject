@@ -29,4 +29,5 @@ th,td{
     white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
+    cursor:default;
 }

@@ -88,12 +88,25 @@ input[type="textbox"]{
     font-size: 18px;
     margin-bottom: 10px;
 }
+table{
+    border-collapse: collapse;
+}
+tr:nth-child(1){
+    background-color:rgb(253 212 62 / 49%) !important;
+}
+tr:nth-child(odd){
+    background-color:#94949452
+}
+tr:hover{
+    background-color: rgb(184 255 231 / 71%);
+}
 th,td{
     white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
+    cursor:default;
 }
 .twotop5{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
