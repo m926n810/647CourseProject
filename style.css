@@ -121,8 +121,8 @@ th,td{
     padding-left:10px;
     padding-right:10px;
 }
-.EVlist{
-    overflow: scroll;
+.EVlist .top5{
+    overflow: auto;
 }
 .EVresult{
     width: 100%;
