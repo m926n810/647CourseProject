@@ -121,12 +121,12 @@ th,td{
     padding-left:10px;
     padding-right:10px;
 }
-.EVlist .top5{
+.EVlist, .top5{
     overflow: auto;
 }
 .EVresult{
     width: 100%;
 }
 .top5tables{
-    margin-left: 10px;
+    margin: 10px;
 }
