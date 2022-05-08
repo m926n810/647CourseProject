@@ -3,7 +3,7 @@ body{
     font-family:Garamond, serif;
     font-size: 19px;
 }
-th{
+th,td{
     white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
@@ -16,5 +16,5 @@ th{
 .featurebox{
     width: 80%;
     display:flex;
-    justify-content: space-around;
+    justify-content:left;
 }

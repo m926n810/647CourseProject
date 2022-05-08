@@ -8,9 +8,6 @@ body{
     flex-direction: column;
     font-family:Garamond, serif;
 }
-div{
-    border: 1px solid black
-}
 .top{
     font-size: 60px;
     background-color: rgba(125, 238, 255, 0.371);
@@ -44,9 +41,11 @@ iframe{
     border: none;
     height: 600px;
 }
+.iframe{
+    overflow: scroll;
+}
 .sf_iframe{
     width: 100%;
-    
 }
 label{
     font-size: 20px;
