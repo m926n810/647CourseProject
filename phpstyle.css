@@ -2,8 +2,6 @@ body{
     overflow: hidden;
     font-family:Garamond, serif;
     font-size: 19px;
-    display:flex;
-    justify-content: center;
 }
 th{
     white-space: nowrap;
