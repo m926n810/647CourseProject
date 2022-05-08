@@ -144,9 +144,16 @@
         </div>
 
         <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">Tops 5: </button>
-        <div class="content hidden">
-        <div>
-            <label>Top 5 most expensive vehicles:</label>
+        <div class="content">
+        <div class="twotop5">
+            <div>
+            <label class="top5labels">Top 5 most expensive vehicles:</label>
+            <table><tr>
+                <th>No.</th>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Price</th>
+            </tr>
             <?php 
             $expquery="SELECT MODEL.ModelName,MAKES.BrandName,MSRP 
                         FROM MODEL JOIN MAKES ON MODEL.ModelName=MAKES.ModelName
@@ -155,16 +162,49 @@
             if($result5 = $db->query($expquery)){
                 $count=1;
                 while($row5=$result5->fetch_assoc()){
-                    echo "<h5>$count: ".$row5["BrandName"]." ".$row5["ModelName"]." $".number_format($row5['MSRP'],2,'.',',')."</h5>";
+                    echo "<tr>
+                        <th>$count</th>
+                        <th>".$row5["BrandName"]."</th>
+                        <th>".$row5["ModelName"]."</th>
+                        <td>".$row5["MSRP"]."</td></tr>";
+
                     $count++;
                 }
                 $result5->free();
             }
             ?>
+        </table>
         </div>
         <div>
-            <label>Top 5 most gas saving trucks:</label>
-            <table class="top5">
+            <label class="top5labels">Top 5 country has most number of vehicles in this library:</label>
+            <table><tr>
+                <th>Country</th>
+                <th>Number of vehicles</th>
+            </tr>
+            <?php
+                $puquery="SELECT BRAND.CountryName,COUNT(*)
+                            FROM BRAND
+                            JOIN MAKES ON BRAND.BrandName=MAKES.BrandName
+                            JOIN  MODEL ON MODEL.ModelName=MAKES.ModelName
+                            JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName
+                            GROUP BY BRAND.CountryName
+                            ORDER BY COUNT(*) DESC
+                            LIMIT 5";
+                if($result8 = $db->query($puquery)){
+                    while($row8=$result8->fetch_assoc()){
+                        echo "<tr>
+                            <td>".$row8['CountryName']."</td>
+                            <td>".$row8['COUNT(*)']."</td>
+                        </tr>";
+                    }
+                    $result8->free();
+                }
+                ?>
+       </table></div>
+       </div>
+        <div>
+            <label class="top5labels">Top 5 most gas saving trucks:</label>
+            <table>
                 <tr>
                     <th>Brand</th>
                     <th>Model Name</th>
@@ -196,8 +236,8 @@
             </table>
         </div>
         <div>
-            <label>Top 5 most powerful sedans:</label>
-            <table class="top5">
+            <label class="top5labels">Top 5 most powerful sedans:</label>
+            <table>
                 <tr>
                     <th>Brand</th>
                     <th>Model Name</th>
@@ -228,32 +268,7 @@
                 ?>
             </table>
         </div>
-        <div>
-            <label>Top 5 country has most number of vehicles in this library:</label>
-            <table class="top5"><tr>
-                <th>Country</th>
-                <th>Number of vehicles</th>
-            </tr>
-            <?php
-                $puquery="SELECT BRAND.CountryName,COUNT(*)
-                            FROM BRAND
-                            JOIN MAKES ON BRAND.BrandName=MAKES.BrandName
-                            JOIN  MODEL ON MODEL.ModelName=MAKES.ModelName
-                            JOIN FEATURES ON MODEL.ModelName=FEATURES.ModelName
-                            GROUP BY BRAND.CountryName
-                            ORDER BY COUNT(*) DESC
-                            LIMIT 5";
-                if($result8 = $db->query($puquery)){
-                    while($row8=$result8->fetch_assoc()){
-                        echo "<tr>
-                            <td>".$row8['CountryName']."</td>
-                            <td>".$row8['COUNT(*)']."</td>
-                        </tr>";
-                    }
-                    $result8->free();
-                }
-                ?>
-       </table></div>
+        
     </div>
     
     <button type="button" class="tabheader" onclick="hideandshow(this.nextElementSibling)">EV list:</button>

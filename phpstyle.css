@@ -3,11 +3,6 @@ body{
     font-family:Garamond, serif;
     font-size: 19px;
 }
-th,td{
-    white-space: nowrap;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 .carinfobox{
     display: flex;
     align-items: flex-start;
@@ -17,4 +12,21 @@ th,td{
     width: 80%;
     display:flex;
     justify-content:left;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-child(1){
+    background-color:rgb(253 212 62 / 49%) !important;
+}
+tr:nth-child(odd){
+    background-color:#94949452
+}
+tr:hover{
+    background-color: rgb(184 255 231 / 71%);
+}
+th,td{
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
 }
